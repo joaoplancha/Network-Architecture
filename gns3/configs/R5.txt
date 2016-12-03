@@ -1,0 +1,16 @@
+conf t
+
+int f0/0
+ip add 201.3.0.69 255.255.255.192
+no shut
+int f0/1
+ip add 201.3.2.5 255.255.255.0
+no shut
+
+router ospf 1
+network 201.3.0.64 0.0.0.63 area 0
+network 201.3.2.0 0.0.0.255 area 2
+
+end
+
+wr

@@ -1,0 +1,38 @@
+Dec 03 13:01:55.768 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 03 13:01:55.768 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51950.
+Dec 03 13:01:55.841 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 03 13:01:55.845 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/ISP-Network/project-files/dynamips 
+Dec 03 13:01:55.846 GENERAL: working_dir=/home/joao/code/ISP-Network/project-files/dynamips
+Dec 03 13:01:55.850 HYPERVISOR: exec_cmd: vm create SW12 4 c3725 
+Dec 03 13:01:55.850 VM: VM SW12 created.
+Dec 03 13:01:55.877 HYPERVISOR: exec_cmd: vm set_con_tcp_port SW12 2002 
+Dec 03 13:01:55.897 HYPERVISOR: exec_cmd: c3725 get_mac_addr SW12 
+Dec 03 13:01:55.906 HYPERVISOR: exec_cmd: vm get_status SW12 
+Dec 03 13:01:55.909 HYPERVISOR: exec_cmd: vm slot_add_binding SW12 1 0 NM-16ESW 
+Dec 03 13:01:55.916 HYPERVISOR: exec_cmd: vm set_ios SW12 /home/joao/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 03 13:01:55.921 HYPERVISOR: exec_cmd: vm get_status SW12 
+Dec 03 13:01:55.948 HYPERVISOR: exec_cmd: vm set_idle_pc SW12 0x60a68e70 
+Dec 03 13:01:55.975 HYPERVISOR: exec_cmd: c3725 set_mac_addr SW12 c204.7a1b.0000 
+Dec 03 13:01:55.981 HYPERVISOR: exec_cmd: vm set_nvram SW12 256 
+Dec 03 13:01:55.988 HYPERVISOR: exec_cmd: vm set_disk0 SW12 1 
+Dec 03 13:01:55.996 HYPERVISOR: exec_cmd: vm set_config SW12 configs/i4_startup-config.cfg 
+Dec 03 13:01:57.012 HYPERVISOR: exec_cmd: nio create_udp udp-75051bf2-c08f-4044-8515-a05e66617cc6 10017 127.0.0.1 10016 
+Dec 03 13:01:57.037 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW12 1 5 udp-75051bf2-c08f-4044-8515-a05e66617cc6 
+Dec 03 13:01:57.051 HYPERVISOR: exec_cmd: vm get_status SW12 
+Dec 03 13:01:57.099 HYPERVISOR: exec_cmd: nio create_udp udp-6da840da-5e23-4928-94d1-14699e94fc51 10019 127.0.0.1 10018 
+Dec 03 13:01:57.107 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW12 1 10 udp-6da840da-5e23-4928-94d1-14699e94fc51 
+Dec 03 13:01:57.120 HYPERVISOR: exec_cmd: vm get_status SW12 
+Dec 03 13:01:57.209 HYPERVISOR: exec_cmd: nio create_udp udp-678730fc-8822-46d6-a076-ff01a37e52d8 10020 127.0.0.1 10021 
+Dec 03 13:01:57.214 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW12 1 0 udp-678730fc-8822-46d6-a076-ff01a37e52d8 
+Dec 03 13:01:57.216 HYPERVISOR: exec_cmd: vm get_status SW12 
+Dec 03 13:01:57.558 HYPERVISOR: exec_cmd: nio create_udp udp-a5232bf2-86d6-47f2-b1f4-8229cd037b80 10041 127.0.0.1 10040 
+Dec 03 13:01:57.562 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW12 1 1 udp-a5232bf2-86d6-47f2-b1f4-8229cd037b80 
+Dec 03 13:01:57.565 HYPERVISOR: exec_cmd: vm get_status SW12 
+Dec 03 13:54:26.698 HYPERVISOR: exec_cmd: vm extract_config SW12 
+Dec 03 13:56:34.407 HYPERVISOR: exec_cmd: vm get_status SW12 
+Dec 03 13:56:34.412 HYPERVISOR: exec_cmd: vm extract_config SW12 
+Dec 03 13:56:34.421 HYPERVISOR: exec_cmd: vm delete SW12 
+Dec 03 13:56:34.421 VM: VM SW12 destroyed.
+Dec 03 13:56:34.426 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 03 13:56:34.448 HYPERVISOR: Stopped.
+Dec 03 13:56:34.448 GENERAL: reset done.

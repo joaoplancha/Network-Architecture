@@ -1,0 +1,7 @@
+conf t
+int vlan 2
+ip add 10.0.10.2 255.255.255.0
+int vlan 2
+ip add 10.0.10.2 255.255.255.0
+int vlan 2
+ip add 10.0.10.2 255.255.255.0

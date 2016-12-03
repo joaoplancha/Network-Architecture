@@ -1,0 +1,58 @@
+vlan database
+vlan 2 name A
+vlan 3 name B
+vlan 4 name C
+apply
+exit 
+
+conf t
+
+int range fa1/2 - 4
+switchport mode access
+switchport access vlan 2
+int range fa1/0 - 1
+switchport trunk encapsulation dot
+switchport mode trunk
+
+
+int range fa1/5 - 9
+switchport mode access
+switchport access vlan 3
+int range fa1/0 - 1
+switchport trunk encapsulation dot
+switchport mode trunk
+
+
+int range fa1/10 - 14
+switchport mode access
+switchport access vlan 4
+int range fa1/0 - 1
+switchport trunk encapsulation dot
+switchport mode trunk
+
+
+int f0/0
+ip add 201.3.0.135 255.255.255.192
+no shut
+
+int s2/0
+ip add 201.3.0.199 255.255.255.192
+encapsulate ppp
+no shut
+
+int vlan 2
+ip add 10.0.10.62 255.255.255.192
+int vlan 3
+ip add 10.0.10.126 255.255.255.192
+int vlan 4
+ip add 10.0.10.190 255.255.255.192
+
+router ospf 1
+network 201.3.0.192 0.0.0.63 area 0
+network 201.3.0.128 0.0.0.63 area 0
+
+
+end
+
+wr
+

@@ -1,0 +1,22 @@
+Dec 03 14:23:04.822 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 03 14:23:04.822 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 46486.
+Dec 03 14:23:04.852 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 03 14:23:04.855 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/ISP-Network/project-files/dynamips 
+Dec 03 14:23:04.855 GENERAL: working_dir=/home/joao/code/ISP-Network/project-files/dynamips
+Dec 03 14:23:04.857 HYPERVISOR: exec_cmd: ethsw create SW9 
+Dec 03 14:23:05.833 HYPERVISOR: exec_cmd: nio create_udp udp-14394fe6-d59e-402c-94e0-552852f082bc 10017 127.0.0.1 10015 
+Dec 03 14:23:05.843 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-14394fe6-d59e-402c-94e0-552852f082bc 
+Dec 03 14:23:05.879 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-14394fe6-d59e-402c-94e0-552852f082bc 1 
+Dec 03 14:23:05.892 HYPERVISOR: exec_cmd: nio create_udp udp-46103f5d-235d-4293-b325-cb409489a8ae 10018 127.0.0.1 10019 
+Dec 03 14:23:05.895 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-46103f5d-235d-4293-b325-cb409489a8ae 
+Dec 03 14:23:05.899 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-46103f5d-235d-4293-b325-cb409489a8ae 1 
+Dec 03 14:23:05.917 HYPERVISOR: exec_cmd: nio create_udp udp-48dbb15d-6939-40c6-ad8f-1cb567f4993a 10021 127.0.0.1 10020 
+Dec 03 14:23:05.950 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-48dbb15d-6939-40c6-ad8f-1cb567f4993a 
+Dec 03 14:23:05.961 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-48dbb15d-6939-40c6-ad8f-1cb567f4993a 1 
+Dec 03 14:23:05.971 HYPERVISOR: exec_cmd: nio create_udp udp-fbf18fe2-8685-4295-b3ef-4d2b1359d4f5 10022 127.0.0.1 10023 
+Dec 03 14:23:05.974 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-fbf18fe2-8685-4295-b3ef-4d2b1359d4f5 
+Dec 03 14:23:05.983 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-fbf18fe2-8685-4295-b3ef-4d2b1359d4f5 1 
+Dec 03 14:23:42.646 HYPERVISOR: exec_cmd: ethsw delete SW9 
+Dec 03 14:23:42.732 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 03 14:23:42.894 HYPERVISOR: Stopped.
+Dec 03 14:23:42.927 GENERAL: reset done.
