@@ -52,6 +52,29 @@ network 201.3.0.192 0.0.0.63 area 0
 network 201.3.0.128 0.0.0.63 area 0
 
 
+
+ip dhcp excluded-address 10.0.10.62
+ip dhcp excluded-address 10.0.10.126
+ip dhcp excluded-address 10.0.10.190
+
+ip dhcp pool vlan2A
+network 10.0.10.0 255.255.255.192
+default-router 10.0.10.62 
+dns-server 10.0.10.62 
+
+ip dhcp pool vlan3B
+network 10.0.10.64 255.255.255.192
+default-router 10.0.10.126 
+dns-server 10.0.10.126 
+
+ip dhcp pool vlan3C
+network 10.0.10.128 255.255.255.192
+default-router 10.0.10.190 
+dns-server 10.0.10.190 
+
+exit
+service dhcp
+
 end
 
 wr
