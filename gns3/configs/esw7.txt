@@ -32,12 +32,12 @@ switchport mode trunk
 
 
 int f0/0
-ip add 201.3.0.135 255.255.255.192
+ip add 201.3.0.199 255.255.255.192
 no shut
 
 int s2/0
-ip add 201.3.0.199 255.255.255.192
-encapsulate ppp
+ip add 201.3.0.135 255.255.255.192
+encapsulation ppp
 no shut
 
 int vlan 2
@@ -48,6 +48,7 @@ int vlan 4
 ip add 10.0.10.190 255.255.255.192
 
 router ospf 1
+router-id 7.7.7.7
 network 201.3.0.192 0.0.0.63 area 0
 network 201.3.0.128 0.0.0.63 area 0
 
@@ -71,6 +72,27 @@ ip dhcp pool vlan3C
 network 10.0.10.128 255.255.255.192
 default-router 10.0.10.190 
 dns-server 10.0.10.190 
+
+
+
+access-list 10 permit 10.0.10.0 0.0.0.63
+access-list 10 permit 10.0.10.64 0.0.0.63
+access-list 10 permit 10.0.10.128 0.0.0.63
+
+int vlan 2
+ip nat inside
+
+int vlan 3
+ip nat inside
+
+int vlan 4
+ip nat inside
+
+int f0/0
+ip nat outside 
+
+ip nat inside source list 10 interface FastEthernet0/0 overload
+
 
 exit
 service dhcp

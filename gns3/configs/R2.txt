@@ -7,14 +7,15 @@ int f0/1
 ip add 201.3.4.130 255.255.255.192
 no shut
 int s1/0
-ip add 201.3.0.194 255.255.255.192
+ip add 201.3.0.134 255.255.255.192
 encapsulation ppp
 no shut
 
 router ospf 1
+router-id 2.2.2.2
 network 201.3.4.192 0.0.0.63 area 4
 network 201.3.4.128 0.0.0.63 area 4
-network 201.3.0.192 0.0.0.63 area 0
+network 201.3.0.128 0.0.0.63 area 0
 
 end
 
