@@ -1,22 +1,22 @@
-Dec 03 15:14:58.047 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
-Dec 03 15:14:58.047 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 33818.
-Dec 03 15:14:58.138 HYPERVISOR: exec_cmd: hypervisor version 
-Dec 03 15:14:58.141 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/gns3/project-files/dynamips 
-Dec 03 15:14:58.141 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/gns3/project-files/dynamips
-Dec 03 15:14:58.144 HYPERVISOR: exec_cmd: ethsw create SW9 
-Dec 03 15:14:58.852 HYPERVISOR: exec_cmd: nio create_udp udp-1c6805c3-4b0c-4ad8-a854-9481ea0da32f 10017 127.0.0.1 10016 
-Dec 03 15:14:58.869 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-1c6805c3-4b0c-4ad8-a854-9481ea0da32f 
-Dec 03 15:14:58.873 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-1c6805c3-4b0c-4ad8-a854-9481ea0da32f 1 
-Dec 03 15:14:58.884 HYPERVISOR: exec_cmd: nio create_udp udp-eb962ecc-67bd-4325-b813-52ff912ca83e 10018 127.0.0.1 10019 
-Dec 03 15:14:58.894 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-eb962ecc-67bd-4325-b813-52ff912ca83e 
-Dec 03 15:14:58.910 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-eb962ecc-67bd-4325-b813-52ff912ca83e 1 
-Dec 03 15:14:58.939 HYPERVISOR: exec_cmd: nio create_udp udp-cdfdda1a-fddc-44e4-a26f-b661bab25413 10020 127.0.0.1 10021 
-Dec 03 15:14:58.957 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-cdfdda1a-fddc-44e4-a26f-b661bab25413 
-Dec 03 15:14:58.981 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-cdfdda1a-fddc-44e4-a26f-b661bab25413 1 
-Dec 03 15:14:58.992 HYPERVISOR: exec_cmd: nio create_udp udp-5bdfb8fc-be1a-4f1b-a8e0-d402c6a7d616 10022 127.0.0.1 10023 
-Dec 03 15:14:59.004 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-5bdfb8fc-be1a-4f1b-a8e0-d402c6a7d616 
-Dec 03 15:14:59.022 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-5bdfb8fc-be1a-4f1b-a8e0-d402c6a7d616 1 
-Dec 03 16:53:51.128 HYPERVISOR: exec_cmd: ethsw delete SW9 
-Dec 03 16:53:51.230 HYPERVISOR: exec_cmd: hypervisor stop 
-Dec 03 16:53:51.392 HYPERVISOR: Stopped.
-Dec 03 16:53:51.392 GENERAL: reset done.
+Dec 03 17:16:34.878 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 03 17:16:34.879 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 42813.
+Dec 03 17:16:34.965 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 03 17:16:34.973 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/gns3/project-files/dynamips 
+Dec 03 17:16:34.973 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/gns3/project-files/dynamips
+Dec 03 17:16:34.983 HYPERVISOR: exec_cmd: ethsw create SW9 
+Dec 03 17:16:35.903 HYPERVISOR: exec_cmd: nio create_udp udp-d6c1427f-6e7c-41be-b0c8-36a4406f4b5b 10017 127.0.0.1 10016 
+Dec 03 17:16:35.906 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-d6c1427f-6e7c-41be-b0c8-36a4406f4b5b 
+Dec 03 17:16:35.935 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-d6c1427f-6e7c-41be-b0c8-36a4406f4b5b 1 
+Dec 03 17:16:35.966 HYPERVISOR: exec_cmd: nio create_udp udp-641e862d-d43f-4e0c-aca7-529192f22f5d 10018 127.0.0.1 10019 
+Dec 03 17:16:35.996 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-641e862d-d43f-4e0c-aca7-529192f22f5d 
+Dec 03 17:16:36.008 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-641e862d-d43f-4e0c-aca7-529192f22f5d 1 
+Dec 03 17:16:36.033 HYPERVISOR: exec_cmd: nio create_udp udp-825fb5c4-a562-427b-8fc3-24babf8b98b0 10020 127.0.0.1 10021 
+Dec 03 17:16:36.065 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-825fb5c4-a562-427b-8fc3-24babf8b98b0 
+Dec 03 17:16:36.113 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-825fb5c4-a562-427b-8fc3-24babf8b98b0 1 
+Dec 03 17:16:36.158 HYPERVISOR: exec_cmd: nio create_udp udp-754da68c-fd3e-4404-9968-a1b628626eac 10022 127.0.0.1 10023 
+Dec 03 17:16:36.161 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-754da68c-fd3e-4404-9968-a1b628626eac 
+Dec 03 17:16:36.180 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-754da68c-fd3e-4404-9968-a1b628626eac 1 
+Dec 03 18:55:16.376 HYPERVISOR: exec_cmd: ethsw delete SW9 
+Dec 03 18:55:16.454 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 03 18:55:16.644 HYPERVISOR: Stopped.
+Dec 03 18:55:16.649 GENERAL: reset done.

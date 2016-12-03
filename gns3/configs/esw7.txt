@@ -33,17 +33,21 @@ switchport mode trunk
 
 int f0/0
 ip add 201.3.0.199 255.255.255.192
+ipv6 add 2001:db8:3:67::7/64
 no shut
 
 int s2/0
 ip add 201.3.0.135 255.255.255.192
+ipv6 add 2001:db8:3:27::7/64
 encapsulation ppp
 no shut
 
 int vlan 2
 ip add 10.0.10.62 255.255.255.192
+
 int vlan 3
 ip add 10.0.10.126 255.255.255.192
+
 int vlan 4
 ip add 10.0.10.190 255.255.255.192
 
@@ -52,6 +56,13 @@ router-id 7.7.7.7
 network 201.3.0.192 0.0.0.63 area 0
 network 201.3.0.128 0.0.0.63 area 0
 
+ipv6 unicast-routing
+ipv6 router ospf 1
+router-id 7.7.7.7
+int f0/0
+ipv6 ospf 1 area 0
+int s2/0
+ipv6 ospf 1 area 0
 
 
 ip dhcp excluded-address 10.0.10.62
