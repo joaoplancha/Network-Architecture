@@ -1,55 +1,34 @@
-Dec 03 17:16:34.178 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
-Dec 03 17:16:34.178 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 58678.
-Dec 03 17:16:34.532 HYPERVISOR: exec_cmd: hypervisor version 
-Dec 03 17:16:34.546 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/gns3/project-files/dynamips 
-Dec 03 17:16:34.546 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/gns3/project-files/dynamips
-Dec 03 17:16:34.558 HYPERVISOR: exec_cmd: vm create R3 10 c3725 
-Dec 03 17:16:34.558 VM: VM R3 created.
-Dec 03 17:16:34.583 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5001 
-Dec 03 17:16:34.591 HYPERVISOR: exec_cmd: c3725 get_mac_addr R3 
-Dec 03 17:16:34.594 HYPERVISOR: exec_cmd: vm get_status R3 
-Dec 03 17:16:34.597 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x60a68e70 
-Dec 03 17:16:34.600 HYPERVISOR: exec_cmd: vm get_status R3 
-Dec 03 17:16:34.603 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 NM-1FE-TX 
-Dec 03 17:16:34.608 HYPERVISOR: exec_cmd: vm set_ios R3 /home/joao/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
-Dec 03 17:16:34.613 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
-Dec 03 17:16:34.668 HYPERVISOR: exec_cmd: c3725 set_mac_addr R3 c20a.252f.0000 
-Dec 03 17:16:34.749 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
-Dec 03 17:16:34.755 HYPERVISOR: exec_cmd: vm set_config R3 configs/i10_startup-config.cfg 
-Dec 03 17:16:35.576 HYPERVISOR: exec_cmd: nio create_udp udp-6c208eb2-f1d2-4732-ad1e-744aa9137316 10004 127.0.0.1 10005 
-Dec 03 17:16:35.599 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-6c208eb2-f1d2-4732-ad1e-744aa9137316 
-Dec 03 17:16:35.614 HYPERVISOR: exec_cmd: vm get_status R3 
-Dec 03 17:16:35.723 HYPERVISOR: exec_cmd: nio create_udp udp-6a3f0636-2f60-48cf-9017-c204bd58b243 10007 127.0.0.1 10006 
-Dec 03 17:16:35.726 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 1 0 udp-6a3f0636-2f60-48cf-9017-c204bd58b243 
-Dec 03 17:16:35.729 HYPERVISOR: exec_cmd: vm get_status R3 
-Dec 03 17:16:35.784 HYPERVISOR: exec_cmd: nio create_udp udp-1e245c6f-224c-4663-bbc4-d4264032297f 10008 127.0.0.1 10009 
-Dec 03 17:16:35.817 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-1e245c6f-224c-4663-bbc4-d4264032297f 
-Dec 03 17:16:35.821 HYPERVISOR: exec_cmd: vm get_status R3 
-Dec 03 17:27:46.949 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
-Dec 03 17:27:46.951 HYPERVISOR: exec_cmd: vm set_ghost_file R3 c3725-advipservicesk9-mz.124-21.image-128.ghost 
-Dec 03 17:27:46.952 HYPERVISOR: exec_cmd: vm get_status R3 
-Dec 03 17:27:46.956 HYPERVISOR: exec_cmd: vm start R3 
-Dec 03 17:33:31.082 HYPERVISOR: exec_cmd: vm get_status R3 
-Dec 03 17:33:31.083 HYPERVISOR: exec_cmd: vm stop R3 
-Dec 03 17:33:31.247 VM: VM R3 shutdown.
-Dec 03 17:33:31.250 HYPERVISOR: exec_cmd: vm extract_config R3 
-Dec 03 17:33:34.979 HYPERVISOR: exec_cmd: vm get_status R3 
-Dec 03 17:33:34.980 HYPERVISOR: exec_cmd: vm start R3 
-Dec 03 18:50:57.170 HYPERVISOR: exec_cmd: vm get_status R3 
-Dec 03 18:50:57.193 HYPERVISOR: exec_cmd: vm stop R3 
-Dec 03 18:50:57.411 VM: VM R3 shutdown.
-Dec 03 18:50:57.422 HYPERVISOR: exec_cmd: vm extract_config R3 
-Dec 03 18:51:27.260 HYPERVISOR: exec_cmd: vm get_status R3 
-Dec 03 18:51:27.265 HYPERVISOR: exec_cmd: vm start R3 
-Dec 03 18:53:36.036 HYPERVISOR: exec_cmd: vm get_status R3 
-Dec 03 18:53:36.048 HYPERVISOR: exec_cmd: vm stop R3 
-Dec 03 18:53:36.279 VM: VM R3 shutdown.
-Dec 03 18:53:36.303 HYPERVISOR: exec_cmd: vm extract_config R3 
-Dec 03 18:53:41.407 HYPERVISOR: exec_cmd: vm extract_config R3 
-Dec 03 18:55:16.774 HYPERVISOR: exec_cmd: vm get_status R3 
-Dec 03 18:55:16.780 HYPERVISOR: exec_cmd: vm extract_config R3 
-Dec 03 18:55:16.789 HYPERVISOR: exec_cmd: vm delete R3 
-Dec 03 18:55:16.789 VM: VM R3 destroyed.
-Dec 03 18:55:16.795 HYPERVISOR: exec_cmd: hypervisor stop 
-Dec 03 18:55:17.025 HYPERVISOR: Stopped.
-Dec 03 18:55:17.025 GENERAL: reset done.
+Dec 04 02:24:12.370 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 04 02:24:12.370 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 34033.
+Dec 04 02:24:12.396 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 04 02:24:12.400 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/gns3/project-files/dynamips 
+Dec 04 02:24:12.400 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/gns3/project-files/dynamips
+Dec 04 02:24:12.404 HYPERVISOR: exec_cmd: vm create R3 10 c3725 
+Dec 04 02:24:12.443 VM: VM R3 created.
+Dec 04 02:24:12.446 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5001 
+Dec 04 02:24:12.470 HYPERVISOR: exec_cmd: c3725 get_mac_addr R3 
+Dec 04 02:24:12.542 HYPERVISOR: exec_cmd: vm set_ios R3 /home/joao/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 04 02:24:12.577 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Dec 04 02:24:12.580 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 04 02:24:12.582 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 NM-1FE-TX 
+Dec 04 02:24:12.593 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Dec 04 02:24:12.614 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 04 02:24:12.618 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x60a68e70 
+Dec 04 02:24:12.623 HYPERVISOR: exec_cmd: c3725 set_mac_addr R3 c20a.252f.0000 
+Dec 04 02:24:12.629 HYPERVISOR: exec_cmd: vm set_config R3 configs/i10_startup-config.cfg 
+Dec 04 02:24:14.007 HYPERVISOR: exec_cmd: nio create_udp udp-c5c826af-a60c-4a9b-b148-e2ac2950e2fd 10000 127.0.0.1 10001 
+Dec 04 02:24:14.016 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-c5c826af-a60c-4a9b-b148-e2ac2950e2fd 
+Dec 04 02:24:14.022 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 04 02:24:14.116 HYPERVISOR: exec_cmd: nio create_udp udp-f68f4b47-4af4-4467-a265-d939c595a316 10003 127.0.0.1 10002 
+Dec 04 02:24:14.127 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 1 0 udp-f68f4b47-4af4-4467-a265-d939c595a316 
+Dec 04 02:24:14.134 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 04 02:24:14.254 HYPERVISOR: exec_cmd: nio create_udp udp-7ffde980-fede-4d91-846a-dea572136a40 10009 127.0.0.1 10010 
+Dec 04 02:24:14.292 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-7ffde980-fede-4d91-846a-dea572136a40 
+Dec 04 02:24:14.296 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 04 02:24:41.552 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 04 02:24:41.565 HYPERVISOR: exec_cmd: vm extract_config R3 
+Dec 04 02:24:41.586 HYPERVISOR: exec_cmd: vm delete R3 
+Dec 04 02:24:41.587 VM: VM R3 destroyed.
+Dec 04 02:24:41.617 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 04 02:24:41.910 HYPERVISOR: Stopped.
+Dec 04 02:24:41.910 GENERAL: reset done.

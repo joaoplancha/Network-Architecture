@@ -1,5 +1,8 @@
 conf t
 
+ip domain lookup   
+ip name-server 201.3.1.2
+
 int f0/0
 ip add 201.3.0.69 255.255.255.192
 ipv6 add 2001:db8:3:456::5/64

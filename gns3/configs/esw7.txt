@@ -7,6 +7,9 @@ exit
 
 conf t
 
+ip domain lookup   
+ip name-server 201.3.1.2
+
 int range fa1/2 - 4
 switchport mode access
 switchport access vlan 2
@@ -72,17 +75,17 @@ ip dhcp excluded-address 10.0.10.190
 ip dhcp pool vlan2A
 network 10.0.10.0 255.255.255.192
 default-router 10.0.10.62 
-dns-server 10.0.10.62 
+dns-server 201.3.1.2
 
 ip dhcp pool vlan3B
 network 10.0.10.64 255.255.255.192
 default-router 10.0.10.126 
-dns-server 10.0.10.126 
+dns-server 201.3.1.2
 
 ip dhcp pool vlan3C
 network 10.0.10.128 255.255.255.192
 default-router 10.0.10.190 
-dns-server 10.0.10.190 
+dns-server 201.3.1.2
 
 
 
@@ -105,7 +108,6 @@ ip nat outside
 ip nat inside source list 10 interface FastEthernet0/0 overload
 
 
-exit
 service dhcp
 
 end
