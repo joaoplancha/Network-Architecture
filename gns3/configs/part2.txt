@@ -1,0 +1,14 @@
+1. Redundância nas áreas 1 (+1 router) e 3 (+1 SWR).
+
+2. EIGRP simultâneo com OSPFv2, v3 ou os dois
+
+3. Criar uma nova área (area 5) com 1 router e vários servidores (web, FS, etc.)
+3.1. NAT estático para permitir acesso do exterior
+3.2. Access-List para limitar acesso ao servidor web pela porta 80
+3.3. Configurar 2 SW, cada um com vários servidores e ligar os SW por EtherChannel
+
+4. Criar GRE tunnel (site to site VPN) entre R3 e R5 (agências de um banco a comunicar com a sede)
+
+5. VPN em MPLS (NAT aware) para ligar área 5 à área 3 (clientes de um banco a comunicar com o homebanking). Também temos que ligar a sede (área 3 à área 5 via VPN)
+
+6. Tradução IPv4 - IPv6

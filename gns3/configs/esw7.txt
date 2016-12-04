@@ -87,7 +87,7 @@ network 10.0.10.128 255.255.255.192
 default-router 10.0.10.190 
 dns-server 201.3.1.2
 
-
+service dhcp
 
 access-list 10 permit 10.0.10.0 0.0.0.63
 access-list 10 permit 10.0.10.64 0.0.0.63
@@ -106,9 +106,6 @@ int f0/0
 ip nat outside 
 
 ip nat inside source list 10 interface FastEthernet0/0 overload
-
-
-service dhcp
 
 end
 
