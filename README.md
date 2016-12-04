@@ -9,4 +9,5 @@ DNS Server was implemented using a virtual machine (VirtualBox running linux lig
 
 
 
-part2 will potentially include: EIGRP, BGP, GRE tunnels, MPLS VPN, Access-Lists, IPv4/IPv6 interoperability
+part2 will potentially include: EIGRP, BGP, GRE tunnels, MPLS VPN, Access-Lists, IPv4/IPv6 interoperability and EtherChannel
+Also, redundancy on ESW7.
