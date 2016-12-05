@@ -1,0 +1,60 @@
+Dec 05 18:06:14.554 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 05 18:06:14.555 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 44290.
+Dec 05 18:06:14.728 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 05 18:06:14.739 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/gns3/project-files/dynamips 
+Dec 05 18:06:14.739 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/gns3/project-files/dynamips
+Dec 05 18:06:14.754 HYPERVISOR: exec_cmd: vm create ESW7 5 c3725 
+Dec 05 18:06:14.793 VM: VM ESW7 created.
+Dec 05 18:06:14.834 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW7 2003 
+Dec 05 18:06:14.840 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW7 
+Dec 05 18:06:14.848 HYPERVISOR: exec_cmd: vm get_status ESW7 
+Dec 05 18:06:14.853 HYPERVISOR: exec_cmd: vm slot_add_binding ESW7 1 0 NM-16ESW 
+Dec 05 18:06:14.863 HYPERVISOR: exec_cmd: vm set_ios ESW7 /home/joao/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 05 18:06:14.868 HYPERVISOR: exec_cmd: vm get_status ESW7 
+Dec 05 18:06:14.872 HYPERVISOR: exec_cmd: vm slot_add_binding ESW7 2 0 NM-4T 
+Dec 05 18:06:14.877 HYPERVISOR: exec_cmd: c3725 set_mac_addr ESW7 c205.7b80.0000 
+Dec 05 18:06:14.881 HYPERVISOR: exec_cmd: vm set_disk0 ESW7 1 
+Dec 05 18:06:14.889 HYPERVISOR: exec_cmd: vm set_nvram ESW7 256 
+Dec 05 18:06:14.894 HYPERVISOR: exec_cmd: vm get_status ESW7 
+Dec 05 18:06:14.899 HYPERVISOR: exec_cmd: vm set_idle_pc ESW7 0x60a6a390 
+Dec 05 18:06:14.930 HYPERVISOR: exec_cmd: vm set_config ESW7 configs/i5_startup-config.cfg 
+Dec 05 18:06:16.323 HYPERVISOR: exec_cmd: nio create_udp udp-89d014ab-b458-4088-bc0d-35312639ee45 10034 127.0.0.1 10035 
+Dec 05 18:06:16.343 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW7 2 0 udp-89d014ab-b458-4088-bc0d-35312639ee45 
+Dec 05 18:06:16.368 HYPERVISOR: exec_cmd: vm get_status ESW7 
+Dec 05 18:06:16.391 HYPERVISOR: exec_cmd: nio create_udp udp-e548fa6a-6c11-4a11-87c6-d0dcf2fce233 10037 127.0.0.1 10036 
+Dec 05 18:06:16.393 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW7 1 0 udp-e548fa6a-6c11-4a11-87c6-d0dcf2fce233 
+Dec 05 18:06:16.403 HYPERVISOR: exec_cmd: vm get_status ESW7 
+Dec 05 18:06:16.444 HYPERVISOR: exec_cmd: nio create_udp udp-a746c723-6c6e-4034-80ca-7352ca0dc643 10039 127.0.0.1 10040 
+Dec 05 18:06:16.463 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW7 0 0 udp-a746c723-6c6e-4034-80ca-7352ca0dc643 
+Dec 05 18:06:16.465 HYPERVISOR: exec_cmd: vm get_status ESW7 
+Dec 05 18:06:16.507 HYPERVISOR: exec_cmd: nio create_udp udp-df89b0ae-3b11-4544-a1f4-60e0ba92125e 10041 127.0.0.1 10042 
+Dec 05 18:06:16.528 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW7 1 1 udp-df89b0ae-3b11-4544-a1f4-60e0ba92125e 
+Dec 05 18:06:16.557 HYPERVISOR: exec_cmd: vm get_status ESW7 
+Dec 05 18:13:09.285 HYPERVISOR: exec_cmd: vm set_ghost_status ESW7 2 
+Dec 05 18:13:09.286 HYPERVISOR: exec_cmd: vm set_ghost_file ESW7 c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Dec 05 18:13:09.287 HYPERVISOR: exec_cmd: vm get_status ESW7 
+Dec 05 18:13:09.296 HYPERVISOR: exec_cmd: vm start ESW7 
+Dec 05 18:33:47.972 HYPERVISOR: exec_cmd: vm get_status ESW7 
+Dec 05 18:33:47.973 HYPERVISOR: exec_cmd: vm stop ESW7 
+Dec 05 18:33:48.159 VM: VM ESW7 shutdown.
+Dec 05 18:33:48.180 HYPERVISOR: exec_cmd: vm extract_config ESW7 
+Dec 05 18:40:44.711 HYPERVISOR: exec_cmd: vm get_status ESW7 
+Dec 05 18:40:44.714 HYPERVISOR: exec_cmd: vm start ESW7 
+Dec 05 19:08:02.969 HYPERVISOR: exec_cmd: vm get_status ESW7 
+Dec 05 19:08:03.071 HYPERVISOR: exec_cmd: vm stop ESW7 
+Dec 05 19:08:03.554 VM: VM ESW7 shutdown.
+Dec 05 19:08:03.585 HYPERVISOR: exec_cmd: vm extract_config ESW7 
+Dec 05 19:08:13.997 HYPERVISOR: exec_cmd: vm get_status ESW7 
+Dec 05 19:08:14.047 HYPERVISOR: exec_cmd: vm start ESW7 
+Dec 05 19:11:09.359 HYPERVISOR: exec_cmd: vm get_status ESW7 
+Dec 05 19:11:09.363 HYPERVISOR: exec_cmd: vm stop ESW7 
+Dec 05 19:11:09.775 VM: VM ESW7 shutdown.
+Dec 05 19:11:09.779 HYPERVISOR: exec_cmd: vm extract_config ESW7 
+Dec 05 19:11:14.124 HYPERVISOR: exec_cmd: vm extract_config ESW7 
+Dec 05 19:11:50.939 HYPERVISOR: exec_cmd: vm get_status ESW7 
+Dec 05 19:11:50.959 HYPERVISOR: exec_cmd: vm extract_config ESW7 
+Dec 05 19:11:51.015 HYPERVISOR: exec_cmd: vm delete ESW7 
+Dec 05 19:11:51.015 VM: VM ESW7 destroyed.
+Dec 05 19:11:51.020 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 05 19:11:51.366 HYPERVISOR: Stopped.
+Dec 05 19:11:51.366 GENERAL: reset done.

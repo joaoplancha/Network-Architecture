@@ -1,0 +1,22 @@
+Dec 05 18:06:14.697 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 05 18:06:14.697 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51729.
+Dec 05 18:06:14.756 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 05 18:06:14.758 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/gns3/project-files/dynamips 
+Dec 05 18:06:14.758 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/gns3/project-files/dynamips
+Dec 05 18:06:14.759 HYPERVISOR: exec_cmd: ethsw create SW9 
+Dec 05 18:06:15.794 HYPERVISOR: exec_cmd: nio create_udp udp-75907ee6-4c91-4809-a8b8-3e22d721d21f 10013 127.0.0.1 10012 
+Dec 05 18:06:15.860 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-75907ee6-4c91-4809-a8b8-3e22d721d21f 
+Dec 05 18:06:15.880 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-75907ee6-4c91-4809-a8b8-3e22d721d21f 1 
+Dec 05 18:06:15.916 HYPERVISOR: exec_cmd: nio create_udp udp-41e454ec-4b6c-40ff-94c5-8ec0a6b69ed6 10014 127.0.0.1 10015 
+Dec 05 18:06:15.920 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-41e454ec-4b6c-40ff-94c5-8ec0a6b69ed6 
+Dec 05 18:06:15.961 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-41e454ec-4b6c-40ff-94c5-8ec0a6b69ed6 1 
+Dec 05 18:06:15.991 HYPERVISOR: exec_cmd: nio create_udp udp-968480ed-17a4-4a89-a9b4-61ee1ddeb99e 10016 127.0.0.1 10017 
+Dec 05 18:06:16.004 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-968480ed-17a4-4a89-a9b4-61ee1ddeb99e 
+Dec 05 18:06:16.027 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-968480ed-17a4-4a89-a9b4-61ee1ddeb99e 1 
+Dec 05 18:06:16.050 HYPERVISOR: exec_cmd: nio create_udp udp-bc560a1b-2ca1-4001-a5e6-27657d560ee6 10018 127.0.0.1 10019 
+Dec 05 18:06:16.080 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-bc560a1b-2ca1-4001-a5e6-27657d560ee6 
+Dec 05 18:06:16.105 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-bc560a1b-2ca1-4001-a5e6-27657d560ee6 1 
+Dec 05 19:11:50.560 HYPERVISOR: exec_cmd: ethsw delete SW9 
+Dec 05 19:11:50.708 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 05 19:11:50.724 HYPERVISOR: Stopped.
+Dec 05 19:11:50.724 GENERAL: reset done.
