@@ -25,3 +25,10 @@ Dec 05 19:20:40.108 HYPERVISOR: exec_cmd: vm get_status SW10
 Dec 05 19:20:40.140 HYPERVISOR: exec_cmd: nio create_udp udp-3b79b477-759d-4b8c-b043-b17409f0806c 10040 127.0.0.1 10039 
 Dec 05 19:20:40.165 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW10 1 0 udp-3b79b477-759d-4b8c-b043-b17409f0806c 
 Dec 05 19:20:40.187 HYPERVISOR: exec_cmd: vm get_status SW10 
+Dec 05 19:21:48.090 HYPERVISOR: exec_cmd: vm get_status SW10 
+Dec 05 19:21:48.112 HYPERVISOR: exec_cmd: vm extract_config SW10 
+Dec 05 19:21:48.122 HYPERVISOR: exec_cmd: vm delete SW10 
+Dec 05 19:21:48.122 VM: VM SW10 destroyed.
+Dec 05 19:21:48.141 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 05 19:21:48.400 HYPERVISOR: Stopped.
+Dec 05 19:21:48.400 GENERAL: reset done.

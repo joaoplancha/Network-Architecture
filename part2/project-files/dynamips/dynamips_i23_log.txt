@@ -16,3 +16,7 @@ Dec 05 19:20:39.851 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-86150165
 Dec 05 19:20:39.878 HYPERVISOR: exec_cmd: nio create_udp udp-daa3c127-7a6b-423a-8c14-7dfa24fbd92c 10024 127.0.0.1 10025 
 Dec 05 19:20:39.926 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-daa3c127-7a6b-423a-8c14-7dfa24fbd92c 
 Dec 05 19:20:39.946 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-daa3c127-7a6b-423a-8c14-7dfa24fbd92c 1 
+Dec 05 19:21:47.687 HYPERVISOR: exec_cmd: ethsw delete SW9 
+Dec 05 19:21:47.764 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 05 19:21:48.021 HYPERVISOR: Stopped.
+Dec 05 19:21:48.021 GENERAL: reset done.

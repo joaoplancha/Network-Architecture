@@ -30,3 +30,10 @@ Dec 05 19:20:40.109 HYPERVISOR: exec_cmd: vm get_status ESW7
 Dec 05 19:20:40.158 HYPERVISOR: exec_cmd: nio create_udp udp-591f5bee-3cc0-400c-b625-1dd0b0639855 10041 127.0.0.1 10037 
 Dec 05 19:20:40.163 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW7 1 1 udp-591f5bee-3cc0-400c-b625-1dd0b0639855 
 Dec 05 19:20:40.181 HYPERVISOR: exec_cmd: vm get_status ESW7 
+Dec 05 19:21:48.101 HYPERVISOR: exec_cmd: vm get_status ESW7 
+Dec 05 19:21:48.115 HYPERVISOR: exec_cmd: vm extract_config ESW7 
+Dec 05 19:21:48.128 HYPERVISOR: exec_cmd: vm delete ESW7 
+Dec 05 19:21:48.129 VM: VM ESW7 destroyed.
+Dec 05 19:21:48.160 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 05 19:21:48.324 HYPERVISOR: Stopped.
+Dec 05 19:21:48.324 GENERAL: reset done.

@@ -22,3 +22,10 @@ Dec 05 19:20:39.524 HYPERVISOR: exec_cmd: vm get_status R5
 Dec 05 19:20:39.610 HYPERVISOR: exec_cmd: nio create_udp udp-dc85136c-bbd0-464f-92d8-4cb15129c4c7 10018 127.0.0.1 10019 
 Dec 05 19:20:39.621 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 1 udp-dc85136c-bbd0-464f-92d8-4cb15129c4c7 
 Dec 05 19:20:39.634 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 05 19:21:48.091 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 05 19:21:48.111 HYPERVISOR: exec_cmd: vm extract_config R5 
+Dec 05 19:21:48.121 HYPERVISOR: exec_cmd: vm delete R5 
+Dec 05 19:21:48.121 VM: VM R5 destroyed.
+Dec 05 19:21:48.139 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 05 19:21:48.620 HYPERVISOR: Stopped.
+Dec 05 19:21:48.620 GENERAL: reset done.
