@@ -1,15 +1,17 @@
 conf t
 
+hostname R6
+
 ip domain lookup   
 ip name-server 201.3.1.2
 
 int f0/0
-ip add 201.3.0.70 255.255.255.192
+ip add 201.3.0.19 255.255.255.240
 ipv6 add 2001:db8:3:456::6/64
 no shut
 
 int f0/1
-ip add 201.3.0.194 255.255.255.192
+ip add 201.3.0.33 255.255.255.240
 ipv6 add 2001:db8:3:67::6/64
 no shut
 
@@ -20,8 +22,8 @@ no shut
 
 router ospf 1
 router-id 6.6.6.6
-network 201.3.0.64 0.0.0.63 area 0
-network 201.3.0.192 0.0.0.63 area 0
+network 201.3.0.16 0.0.0.15 area 0
+network 201.3.0.32 0.0.0.15 area 0
 network 201.3.2.0 0.0.0.255 area 2
 
 ipv6 unicast-routing

@@ -1,10 +1,12 @@
 conf t
 
+hostname R5
+
 ip domain lookup   
 ip name-server 201.3.1.2
 
 int f0/0
-ip add 201.3.0.69 255.255.255.192
+ip add 201.3.0.18 255.255.255.240
 ipv6 add 2001:db8:3:456::5/64
 no shut
 
@@ -15,7 +17,7 @@ no shut
 
 router ospf 1
 router-id 5.5.5.5
-network 201.3.0.64 0.0.0.63 area 0
+network 201.3.0.16 0.0.0.15 area 0
 network 201.3.2.0 0.0.0.255 area 2
 
 ipv6 unicast-routing
@@ -29,3 +31,5 @@ ipv6 ospf 1 area 2
 end
 
 wr
+
+

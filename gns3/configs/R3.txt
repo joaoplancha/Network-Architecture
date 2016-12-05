@@ -1,5 +1,7 @@
 conf t
 
+hostname R3
+
 ip domain lookup   
 ip name-server 201.3.1.2
 
@@ -34,3 +36,5 @@ network 201.3.4.64 0.0.0.63 area 4
 end
 
 wr
+
+
