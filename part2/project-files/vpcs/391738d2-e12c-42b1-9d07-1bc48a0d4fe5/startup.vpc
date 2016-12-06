@@ -1,2 +1,2 @@
-set pcname PC4
+set pcname PC4 - vlan 4
 dhcp

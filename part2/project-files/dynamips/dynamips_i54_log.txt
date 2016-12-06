@@ -1,0 +1,28 @@
+Dec 05 23:02:06.766 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 05 23:02:06.766 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 43623.
+Dec 05 23:02:06.798 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 05 23:02:06.811 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/part2/project-files/dynamips 
+Dec 05 23:02:06.811 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/part2/project-files/dynamips
+Dec 05 23:02:06.832 HYPERVISOR: exec_cmd: vm create FileServer1 8 c3725 
+Dec 05 23:02:06.833 VM: VM FileServer1 created.
+Dec 05 23:02:06.837 HYPERVISOR: exec_cmd: vm set_con_tcp_port FileServer1 2007 
+Dec 05 23:02:06.843 HYPERVISOR: exec_cmd: c3725 get_mac_addr FileServer1 
+Dec 05 23:02:06.860 HYPERVISOR: exec_cmd: c3725 set_mac_addr FileServer1 c208.106f.0000 
+Dec 05 23:02:06.896 HYPERVISOR: exec_cmd: vm set_ios FileServer1 /home/joao/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 05 23:02:06.922 HYPERVISOR: exec_cmd: vm get_status FileServer1 
+Dec 05 23:02:06.927 HYPERVISOR: exec_cmd: vm set_idle_pc FileServer1 0x60a6a390 
+Dec 05 23:02:06.930 HYPERVISOR: exec_cmd: vm get_status FileServer1 
+Dec 05 23:02:06.944 HYPERVISOR: exec_cmd: vm slot_add_binding FileServer1 1 0 NM-1FE-TX 
+Dec 05 23:02:06.969 HYPERVISOR: exec_cmd: vm set_nvram FileServer1 256 
+Dec 05 23:02:06.976 HYPERVISOR: exec_cmd: vm set_disk0 FileServer1 0 
+Dec 05 23:02:06.980 HYPERVISOR: exec_cmd: vm set_config FileServer1 configs/i8_startup-config.cfg 
+Dec 05 23:02:08.415 HYPERVISOR: exec_cmd: nio create_udp udp-f6d380bd-5f66-4232-bd11-6b582c582839 10028 127.0.0.1 10029 
+Dec 05 23:02:08.451 HYPERVISOR: exec_cmd: vm slot_add_nio_binding FileServer1 0 0 udp-f6d380bd-5f66-4232-bd11-6b582c582839 
+Dec 05 23:02:08.455 HYPERVISOR: exec_cmd: vm get_status FileServer1 
+Dec 05 23:10:07.486 HYPERVISOR: exec_cmd: vm get_status FileServer1 
+Dec 05 23:10:07.503 HYPERVISOR: exec_cmd: vm extract_config FileServer1 
+Dec 05 23:10:07.518 HYPERVISOR: exec_cmd: vm delete FileServer1 
+Dec 05 23:10:07.518 VM: VM FileServer1 destroyed.
+Dec 05 23:10:07.531 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 05 23:10:07.690 HYPERVISOR: Stopped.
+Dec 05 23:10:07.690 GENERAL: reset done.

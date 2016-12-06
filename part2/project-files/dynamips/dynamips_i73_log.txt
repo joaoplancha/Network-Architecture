@@ -1,0 +1,21 @@
+Dec 05 23:10:11.057 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 05 23:10:11.057 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 46865.
+Dec 05 23:10:11.154 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 05 23:10:11.169 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/part2/project-files/dynamips 
+Dec 05 23:10:11.169 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/part2/project-files/dynamips
+Dec 05 23:10:11.190 HYPERVISOR: exec_cmd: vm create FileServer2 9 c3725 
+Dec 05 23:10:11.190 VM: VM FileServer2 created.
+Dec 05 23:10:11.222 HYPERVISOR: exec_cmd: vm set_con_tcp_port FileServer2 2008 
+Dec 05 23:10:11.246 HYPERVISOR: exec_cmd: c3725 get_mac_addr FileServer2 
+Dec 05 23:10:11.253 HYPERVISOR: exec_cmd: c3725 set_mac_addr FileServer2 c209.107e.0000 
+Dec 05 23:10:11.256 HYPERVISOR: exec_cmd: vm set_ios FileServer2 /home/joao/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 05 23:10:11.258 HYPERVISOR: exec_cmd: vm get_status FileServer2 
+Dec 05 23:10:11.261 HYPERVISOR: exec_cmd: vm set_idle_pc FileServer2 0x60a6a390 
+Dec 05 23:10:11.266 HYPERVISOR: exec_cmd: vm get_status FileServer2 
+Dec 05 23:10:11.269 HYPERVISOR: exec_cmd: vm slot_add_binding FileServer2 1 0 NM-1FE-TX 
+Dec 05 23:10:11.294 HYPERVISOR: exec_cmd: vm set_nvram FileServer2 256 
+Dec 05 23:10:11.324 HYPERVISOR: exec_cmd: vm set_disk0 FileServer2 0 
+Dec 05 23:10:11.328 HYPERVISOR: exec_cmd: vm set_config FileServer2 configs/i9_startup-config.cfg 
+Dec 05 23:10:12.747 HYPERVISOR: exec_cmd: nio create_udp udp-39d3ba19-321c-4a39-8a2f-3c2fda45b24a 10030 127.0.0.1 10031 
+Dec 05 23:10:12.750 HYPERVISOR: exec_cmd: vm slot_add_nio_binding FileServer2 0 0 udp-39d3ba19-321c-4a39-8a2f-3c2fda45b24a 
+Dec 05 23:10:12.768 HYPERVISOR: exec_cmd: vm get_status FileServer2 

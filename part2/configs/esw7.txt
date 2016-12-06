@@ -7,68 +7,38 @@ exit
 
 conf t
 
-hostname ESW7
+int range fa1/0 - 2
+switchport trunk encapsulation dot
+switchport mode trunk
+channel-group 1 mode on
+exit
+interface port-channel 1
+switchport trunk encapsulation dot
+switchport mode trunk
+
+int range fa1/3 - 5
+switchport trunk encapsulation dot
+switchport mode trunk
+channel-group 4 mode on
+exit
+interface port-channel 4
+switchport trunk encapsulation dot
+switchport mode trunk
+
+int range fa1/7 - 9
+switchport mode access
+switchport access vlan 2
+
+int range fa1/10 - 12
+switchport mode access
+switchport access vlan 3
+
+int range fa1/13 - 15
+switchport mode access
+switchport access vlan 4
 
 ip domain lookup   
 ip name-server 201.3.1.2
-
-int range fa1/2 - 4
-switchport mode access
-switchport access vlan 2
-int range fa1/0 - 1
-switchport trunk encapsulation dot
-switchport mode trunk
-
-
-int range fa1/5 - 9
-switchport mode access
-switchport access vlan 3
-int range fa1/0 - 1
-switchport trunk encapsulation dot
-switchport mode trunk
-
-
-int range fa1/10 - 14
-switchport mode access
-switchport access vlan 4
-int range fa1/0 - 1
-switchport trunk encapsulation dot
-switchport mode trunk
-
-
-int f0/0
-ip add 201.3.0.34 255.255.255.240
-ipv6 add 2001:db8:3:67::7/64
-no shut
-
-int s2/0
-ip add 201.3.0.49 255.255.255.240
-ipv6 add 2001:db8:3:27::7/64
-encapsulation ppp
-no shut
-
-int vlan 2
-ip add 10.0.10.62 255.255.255.192
-
-int vlan 3
-ip add 10.0.10.126 255.255.255.192
-
-int vlan 4
-ip add 10.0.10.190 255.255.255.192
-
-router ospf 1
-router-id 7.7.7.7
-network 201.3.0.48 0.0.0.15 area 0
-network 201.3.0.32 0.0.0.15 area 0
-
-ipv6 unicast-routing
-ipv6 router ospf 1
-router-id 7.7.7.7
-int f0/0
-ipv6 ospf 1 area 0
-int s2/0
-ipv6 ospf 1 area 0
-
 
 ip dhcp excluded-address 10.0.10.62
 ip dhcp excluded-address 10.0.10.126
@@ -112,11 +82,48 @@ ip nat outside
 
 ip nat inside source list 10 interface FastEthernet0/0 overload
 
+
+
+int f0/0
+ip add 201.3.0.34 255.255.255.240
+ipv6 add 2001:db8:3:67::7/64
+no shut
+
+int s2/0
+ip add 201.3.0.49 255.255.255.240
+ipv6 add 2001:db8:3:27::7/64
+encapsulation ppp
+no shut
+
+int vlan 2
+ip add 10.0.10.62 255.255.255.192
+
+int vlan 3
+ip add 10.0.10.126 255.255.255.192
+
+int vlan 4
+ip add 10.0.10.190 255.255.255.192
+
+router ospf 1
+router-id 7.7.7.7
+network 201.3.0.48 0.0.0.15 area 0
+network 201.3.0.32 0.0.0.15 area 0
+
+ipv6 unicast-routing
+ipv6 router ospf 1
+router-id 7.7.7.7
+int f0/0
+ipv6 ospf 1 area 0
+int s2/0
+ipv6 ospf 1 area 0
+
+router eigrp 100
+network 201.3.0.48 0.0.0.15
+network 201.3.0.32 0.0.0.15
+no auto-summary
+
 end
 
 wr
 
-access-list 20 permit 10.0.10.0 0.0.0.63
-access-list 20 permit 10.0.10.64 0.0.0.63
-access-list 20 permit 10.0.10.128 0.0.0.63
-ip nat inside source list 20 interface Serial2/0 overload
+

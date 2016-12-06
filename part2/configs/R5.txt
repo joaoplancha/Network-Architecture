@@ -28,6 +28,11 @@ ipv6 ospf 1 area 0
 int f0/1
 ipv6 ospf 1 area 2
 
+router eigrp 100
+network 201.3.0.16 0.0.0.15
+network 201.3.2.0 0.0.0.255
+no auto-summary
+
 end
 
 wr

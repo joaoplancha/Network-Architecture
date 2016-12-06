@@ -33,6 +33,12 @@ network 201.3.4.0 0.0.0.63 area 4
 network 201.3.4.128 0.0.0.63 area 4
 network 201.3.4.64 0.0.0.63 area 4
 
+router eigrp 100
+network 201.3.4.0 0.0.0.63
+network 201.3.4.64 0.0.0.63
+network 201.3.4.128 0.0.0.63
+no auto-summary
+
 end
 
 wr

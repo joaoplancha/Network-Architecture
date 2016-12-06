@@ -1,0 +1,42 @@
+vlan database
+vlan 2 name A
+vlan 3 name B
+vlan 4 name C
+apply
+exit 
+
+conf t
+
+int range fa1/0 - 2
+switchport trunk encapsulation dot
+switchport mode trunk
+channel-group 1 mode on
+exit
+interface port-channel 1
+switchport trunk encapsulation dot
+switchport mode trunk
+
+int range fa1/3 - 5
+switchport trunk encapsulation dot
+switchport mode trunk
+channel-group 2 mode on
+exit
+interface port-channel 2
+switchport trunk encapsulation dot
+switchport mode trunk
+
+int range fa1/7 - 9
+switchport mode access
+switchport access vlan 2
+
+int range fa1/10 - 12
+switchport mode access
+switchport access vlan 3
+
+int range fa1/13 - 15
+switchport mode access
+switchport access vlan 4
+ 
+end 
+
+wr

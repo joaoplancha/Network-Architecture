@@ -1,24 +1,19 @@
-Dec 05 19:20:04.870 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
-Dec 05 19:20:04.870 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 46130.
-Dec 05 19:20:04.937 HYPERVISOR: exec_cmd: hypervisor version 
-Dec 05 19:20:04.949 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/part1/project-files/dynamips 
-Dec 05 19:20:04.949 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/part1/project-files/dynamips
-Dec 05 19:20:04.959 HYPERVISOR: exec_cmd: vm create R5 12 c3725 
-Dec 05 19:20:04.959 VM: VM R5 created.
-Dec 05 19:20:04.985 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 5003 
-Dec 05 19:20:05.022 HYPERVISOR: exec_cmd: c3725 get_mac_addr R5 
-Dec 05 19:20:05.085 HYPERVISOR: exec_cmd: vm set_disk0 R5 0 
-Dec 05 19:20:05.112 HYPERVISOR: exec_cmd: vm set_nvram R5 256 
-Dec 05 19:20:05.132 HYPERVISOR: exec_cmd: vm set_ios R5 /home/joao/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
-Dec 05 19:20:05.143 HYPERVISOR: exec_cmd: vm get_status R5 
-Dec 05 19:20:05.151 HYPERVISOR: exec_cmd: vm slot_add_binding R5 1 0 NM-1FE-TX 
-Dec 05 19:20:05.164 HYPERVISOR: exec_cmd: vm get_status R5 
-Dec 05 19:20:05.174 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x60a68e70 
-Dec 05 19:20:05.188 HYPERVISOR: exec_cmd: c3725 set_mac_addr R5 c20c.254b.0000 
-Dec 05 19:20:05.244 HYPERVISOR: exec_cmd: vm set_config R5 configs/i12_startup-config.cfg 
-Dec 05 19:20:06.652 HYPERVISOR: exec_cmd: nio create_udp udp-9a415bec-2bdd-4e56-977f-9b74dbcd3454 10005 127.0.0.1 10004 
-Dec 05 19:20:06.685 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 0 udp-9a415bec-2bdd-4e56-977f-9b74dbcd3454 
-Dec 05 19:20:06.696 HYPERVISOR: exec_cmd: vm get_status R5 
-Dec 05 19:20:07.346 HYPERVISOR: exec_cmd: nio create_udp udp-1dc909ae-acef-4d0c-b018-5f68eeeaa3e1 10030 127.0.0.1 10031 
-Dec 05 19:20:07.364 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 1 udp-1dc909ae-acef-4d0c-b018-5f68eeeaa3e1 
-Dec 05 19:20:07.369 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 06 01:11:25.407 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 06 01:11:25.407 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 37041.
+Dec 06 01:11:25.531 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 06 01:11:25.535 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/part2/project-files/dynamips 
+Dec 06 01:11:25.535 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/part2/project-files/dynamips
+Dec 06 01:11:25.537 HYPERVISOR: exec_cmd: ethsw create SW8 
+Dec 06 01:11:27.132 HYPERVISOR: exec_cmd: nio create_udp udp-fd160684-0cfc-422f-8f0a-af3ad436790c 10002 127.0.0.1 10003 
+Dec 06 01:11:27.141 HYPERVISOR: exec_cmd: ethsw add_nio SW8 udp-fd160684-0cfc-422f-8f0a-af3ad436790c 
+Dec 06 01:11:27.164 HYPERVISOR: exec_cmd: ethsw set_access_port SW8 udp-fd160684-0cfc-422f-8f0a-af3ad436790c 1 
+Dec 06 01:11:27.294 HYPERVISOR: exec_cmd: nio create_udp udp-36e4c48a-155f-4530-8f7e-0f6c6c2a8ca7 10004 127.0.0.1 10005 
+Dec 06 01:11:27.297 HYPERVISOR: exec_cmd: ethsw add_nio SW8 udp-36e4c48a-155f-4530-8f7e-0f6c6c2a8ca7 
+Dec 06 01:11:27.306 HYPERVISOR: exec_cmd: ethsw set_access_port SW8 udp-36e4c48a-155f-4530-8f7e-0f6c6c2a8ca7 1 
+Dec 06 01:11:27.383 HYPERVISOR: exec_cmd: nio create_udp udp-d0e633e6-1b53-4a51-96a5-f700ad05ef77 10007 127.0.0.1 10006 
+Dec 06 01:11:27.401 HYPERVISOR: exec_cmd: ethsw add_nio SW8 udp-d0e633e6-1b53-4a51-96a5-f700ad05ef77 
+Dec 06 01:11:27.413 HYPERVISOR: exec_cmd: ethsw set_access_port SW8 udp-d0e633e6-1b53-4a51-96a5-f700ad05ef77 1 
+Dec 06 01:11:47.364 HYPERVISOR: exec_cmd: ethsw delete SW8 
+Dec 06 01:11:47.419 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 06 01:11:47.540 HYPERVISOR: Stopped.
+Dec 06 01:11:47.540 GENERAL: reset done.

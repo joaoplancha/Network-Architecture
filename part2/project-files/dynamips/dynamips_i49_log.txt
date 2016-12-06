@@ -1,0 +1,22 @@
+Dec 05 23:02:06.544 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 05 23:02:06.544 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49294.
+Dec 05 23:02:06.675 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 05 23:02:06.690 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/part2/project-files/dynamips 
+Dec 05 23:02:06.690 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/part2/project-files/dynamips
+Dec 05 23:02:06.718 HYPERVISOR: exec_cmd: ethsw create SW9 
+Dec 05 23:02:08.067 HYPERVISOR: exec_cmd: nio create_udp udp-0c539bd8-0cf9-407c-8ca5-433af403a8d2 10009 127.0.0.1 10008 
+Dec 05 23:02:08.070 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-0c539bd8-0cf9-407c-8ca5-433af403a8d2 
+Dec 05 23:02:08.108 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-0c539bd8-0cf9-407c-8ca5-433af403a8d2 1 
+Dec 05 23:02:08.121 HYPERVISOR: exec_cmd: nio create_udp udp-15063f85-dbe3-4c2f-b458-d16940211eda 10010 127.0.0.1 10011 
+Dec 05 23:02:08.123 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-15063f85-dbe3-4c2f-b458-d16940211eda 
+Dec 05 23:02:08.150 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-15063f85-dbe3-4c2f-b458-d16940211eda 1 
+Dec 05 23:02:08.178 HYPERVISOR: exec_cmd: nio create_udp udp-7d088ffb-8d1c-49f8-921e-f5a33ca9672c 10012 127.0.0.1 10013 
+Dec 05 23:02:08.180 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-7d088ffb-8d1c-49f8-921e-f5a33ca9672c 
+Dec 05 23:02:08.183 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-7d088ffb-8d1c-49f8-921e-f5a33ca9672c 1 
+Dec 05 23:02:08.194 HYPERVISOR: exec_cmd: nio create_udp udp-63a8b61e-0441-4122-8502-becd7025597b 10014 127.0.0.1 10015 
+Dec 05 23:02:08.213 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-63a8b61e-0441-4122-8502-becd7025597b 
+Dec 05 23:02:08.232 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-63a8b61e-0441-4122-8502-becd7025597b 1 
+Dec 05 23:10:06.991 HYPERVISOR: exec_cmd: ethsw delete SW9 
+Dec 05 23:10:07.055 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 05 23:10:07.093 HYPERVISOR: Stopped.
+Dec 05 23:10:07.093 GENERAL: reset done.

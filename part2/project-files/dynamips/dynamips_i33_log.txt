@@ -1,0 +1,28 @@
+Dec 05 22:49:45.455 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 05 22:49:45.455 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 42690.
+Dec 05 22:49:45.490 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 05 22:49:45.494 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/part2/project-files/dynamips 
+Dec 05 22:49:45.494 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/part2/project-files/dynamips
+Dec 05 22:49:45.576 HYPERVISOR: exec_cmd: vm create FileServer2 9 c3725 
+Dec 05 22:49:45.576 VM: VM FileServer2 created.
+Dec 05 22:49:45.607 HYPERVISOR: exec_cmd: vm set_con_tcp_port FileServer2 2008 
+Dec 05 22:49:45.611 HYPERVISOR: exec_cmd: c3725 get_mac_addr FileServer2 
+Dec 05 22:49:45.615 HYPERVISOR: exec_cmd: c3725 set_mac_addr FileServer2 c209.107e.0000 
+Dec 05 22:49:45.617 HYPERVISOR: exec_cmd: vm set_ios FileServer2 /home/joao/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 05 22:49:45.621 HYPERVISOR: exec_cmd: vm get_status FileServer2 
+Dec 05 22:49:45.647 HYPERVISOR: exec_cmd: vm set_idle_pc FileServer2 0x60a6a390 
+Dec 05 22:49:45.672 HYPERVISOR: exec_cmd: vm get_status FileServer2 
+Dec 05 22:49:45.680 HYPERVISOR: exec_cmd: vm slot_add_binding FileServer2 1 0 NM-1FE-TX 
+Dec 05 22:49:45.686 HYPERVISOR: exec_cmd: vm set_nvram FileServer2 256 
+Dec 05 22:49:45.689 HYPERVISOR: exec_cmd: vm set_disk0 FileServer2 0 
+Dec 05 22:49:45.694 HYPERVISOR: exec_cmd: vm set_config FileServer2 configs/i9_startup-config.cfg 
+Dec 05 22:49:47.554 HYPERVISOR: exec_cmd: nio create_udp udp-5fc11047-8e15-47b5-8efd-ffe075dbb1b9 10030 127.0.0.1 10031 
+Dec 05 22:49:47.569 HYPERVISOR: exec_cmd: vm slot_add_nio_binding FileServer2 0 0 udp-5fc11047-8e15-47b5-8efd-ffe075dbb1b9 
+Dec 05 22:49:47.591 HYPERVISOR: exec_cmd: vm get_status FileServer2 
+Dec 05 23:00:00.186 HYPERVISOR: exec_cmd: vm get_status FileServer2 
+Dec 05 23:00:00.200 HYPERVISOR: exec_cmd: vm extract_config FileServer2 
+Dec 05 23:00:00.212 HYPERVISOR: exec_cmd: vm delete FileServer2 
+Dec 05 23:00:00.212 VM: VM FileServer2 destroyed.
+Dec 05 23:00:00.222 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 05 23:00:00.464 HYPERVISOR: Stopped.
+Dec 05 23:00:00.464 GENERAL: reset done.

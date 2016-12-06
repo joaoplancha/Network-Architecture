@@ -1,34 +1,28 @@
-Dec 05 19:20:37.919 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
-Dec 05 19:20:37.919 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 41846.
-Dec 05 19:20:38.087 HYPERVISOR: exec_cmd: hypervisor version 
-Dec 05 19:20:38.107 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/part2/project-files/dynamips 
-Dec 05 19:20:38.107 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/part2/project-files/dynamips
-Dec 05 19:20:38.160 HYPERVISOR: exec_cmd: vm create R6 14 c3725 
-Dec 05 19:20:38.160 VM: VM R6 created.
-Dec 05 19:20:38.243 HYPERVISOR: exec_cmd: vm set_con_tcp_port R6 5005 
-Dec 05 19:20:38.251 HYPERVISOR: exec_cmd: c3725 get_mac_addr R6 
-Dec 05 19:20:38.257 HYPERVISOR: exec_cmd: vm set_disk0 R6 0 
-Dec 05 19:20:38.260 HYPERVISOR: exec_cmd: vm set_nvram R6 256 
-Dec 05 19:20:38.263 HYPERVISOR: exec_cmd: vm set_ios R6 /home/joao/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
-Dec 05 19:20:38.279 HYPERVISOR: exec_cmd: vm get_status R6 
-Dec 05 19:20:38.309 HYPERVISOR: exec_cmd: vm slot_add_binding R6 1 0 NM-1FE-TX 
-Dec 05 19:20:38.318 HYPERVISOR: exec_cmd: vm get_status R6 
-Dec 05 19:20:38.323 HYPERVISOR: exec_cmd: vm set_idle_pc R6 0x60a68e70 
-Dec 05 19:20:38.327 HYPERVISOR: exec_cmd: c3725 set_mac_addr R6 c20e.256c.0000 
-Dec 05 19:20:38.333 HYPERVISOR: exec_cmd: vm set_config R6 configs/i14_startup-config.cfg 
-Dec 05 19:20:39.551 HYPERVISOR: exec_cmd: nio create_udp udp-5dfe0f1c-60bf-4b66-b326-cce14189840d 10016 127.0.0.1 10017 
-Dec 05 19:20:39.576 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 0 0 udp-5dfe0f1c-60bf-4b66-b326-cce14189840d 
-Dec 05 19:20:39.619 HYPERVISOR: exec_cmd: vm get_status R6 
-Dec 05 19:20:39.728 HYPERVISOR: exec_cmd: nio create_udp udp-677148f6-d229-42e5-a744-3acd42fb1585 10025 127.0.0.1 10024 
-Dec 05 19:20:39.730 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 1 0 udp-677148f6-d229-42e5-a744-3acd42fb1585 
-Dec 05 19:20:39.733 HYPERVISOR: exec_cmd: vm get_status R6 
-Dec 05 19:20:39.849 HYPERVISOR: exec_cmd: nio create_udp udp-e9cac03d-84df-4e27-8365-3955b142af05 10029 127.0.0.1 10028 
-Dec 05 19:20:39.852 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 0 1 udp-e9cac03d-84df-4e27-8365-3955b142af05 
-Dec 05 19:20:39.879 HYPERVISOR: exec_cmd: vm get_status R6 
-Dec 05 19:21:48.102 HYPERVISOR: exec_cmd: vm get_status R6 
-Dec 05 19:21:48.116 HYPERVISOR: exec_cmd: vm extract_config R6 
-Dec 05 19:21:48.125 HYPERVISOR: exec_cmd: vm delete R6 
-Dec 05 19:21:48.125 VM: VM R6 destroyed.
-Dec 05 19:21:48.152 HYPERVISOR: exec_cmd: hypervisor stop 
-Dec 05 19:21:48.611 HYPERVISOR: Stopped.
-Dec 05 19:21:48.611 GENERAL: reset done.
+Dec 06 01:11:26.099 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 06 01:11:26.099 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 57831.
+Dec 06 01:11:26.254 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 06 01:11:26.305 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/part2/project-files/dynamips 
+Dec 06 01:11:26.305 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/part2/project-files/dynamips
+Dec 06 01:11:26.333 HYPERVISOR: exec_cmd: vm create Intranet 13 c3725 
+Dec 06 01:11:26.334 VM: VM Intranet created.
+Dec 06 01:11:26.338 HYPERVISOR: exec_cmd: vm set_con_tcp_port Intranet 2009 
+Dec 06 01:11:26.340 HYPERVISOR: exec_cmd: c3725 get_mac_addr Intranet 
+Dec 06 01:11:26.341 HYPERVISOR: exec_cmd: vm get_status Intranet 
+Dec 06 01:11:26.343 HYPERVISOR: exec_cmd: vm slot_add_binding Intranet 1 0 NM-1FE-TX 
+Dec 06 01:11:26.344 HYPERVISOR: exec_cmd: c3725 set_mac_addr Intranet c20d.108d.0000 
+Dec 06 01:11:26.347 HYPERVISOR: exec_cmd: vm set_disk0 Intranet 0 
+Dec 06 01:11:26.349 HYPERVISOR: exec_cmd: vm get_status Intranet 
+Dec 06 01:11:26.362 HYPERVISOR: exec_cmd: vm set_idle_pc Intranet 0x60a6a390 
+Dec 06 01:11:26.379 HYPERVISOR: exec_cmd: vm set_nvram Intranet 256 
+Dec 06 01:11:26.396 HYPERVISOR: exec_cmd: vm set_ios Intranet /home/joao/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 06 01:11:26.402 HYPERVISOR: exec_cmd: vm set_config Intranet configs/i13_startup-config.cfg 
+Dec 06 01:11:28.962 HYPERVISOR: exec_cmd: nio create_udp udp-528eca82-fadc-4dd8-9301-fde7db9fe3dc 10073 127.0.0.1 10072 
+Dec 06 01:11:28.984 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Intranet 0 0 udp-528eca82-fadc-4dd8-9301-fde7db9fe3dc 
+Dec 06 01:11:28.988 HYPERVISOR: exec_cmd: vm get_status Intranet 
+Dec 06 01:11:47.665 HYPERVISOR: exec_cmd: vm get_status Intranet 
+Dec 06 01:11:47.685 HYPERVISOR: exec_cmd: vm extract_config Intranet 
+Dec 06 01:11:47.701 HYPERVISOR: exec_cmd: vm delete Intranet 
+Dec 06 01:11:47.701 VM: VM Intranet destroyed.
+Dec 06 01:11:47.721 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 06 01:11:47.740 HYPERVISOR: Stopped.
+Dec 06 01:11:47.740 GENERAL: reset done.

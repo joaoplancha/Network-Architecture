@@ -1,0 +1,28 @@
+Dec 05 22:49:45.804 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 05 22:49:45.804 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 39260.
+Dec 05 22:49:45.872 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 05 22:49:45.888 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/part2/project-files/dynamips 
+Dec 05 22:49:45.888 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/part2/project-files/dynamips
+Dec 05 22:49:45.893 HYPERVISOR: exec_cmd: vm create Intranet 13 c3725 
+Dec 05 22:49:45.893 VM: VM Intranet created.
+Dec 05 22:49:45.926 HYPERVISOR: exec_cmd: vm set_con_tcp_port Intranet 2009 
+Dec 05 22:49:45.945 HYPERVISOR: exec_cmd: c3725 get_mac_addr Intranet 
+Dec 05 22:49:45.951 HYPERVISOR: exec_cmd: c3725 set_mac_addr Intranet c20d.108d.0000 
+Dec 05 22:49:45.956 HYPERVISOR: exec_cmd: vm set_ios Intranet /home/joao/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 05 22:49:45.967 HYPERVISOR: exec_cmd: vm get_status Intranet 
+Dec 05 22:49:45.970 HYPERVISOR: exec_cmd: vm set_idle_pc Intranet 0x60a6a390 
+Dec 05 22:49:46.001 HYPERVISOR: exec_cmd: vm get_status Intranet 
+Dec 05 22:49:46.010 HYPERVISOR: exec_cmd: vm slot_add_binding Intranet 1 0 NM-1FE-TX 
+Dec 05 22:49:46.015 HYPERVISOR: exec_cmd: vm set_nvram Intranet 256 
+Dec 05 22:49:46.017 HYPERVISOR: exec_cmd: vm set_disk0 Intranet 0 
+Dec 05 22:49:46.038 HYPERVISOR: exec_cmd: vm set_config Intranet configs/i13_startup-config.cfg 
+Dec 05 22:49:48.538 HYPERVISOR: exec_cmd: nio create_udp udp-ccb0c5d2-4918-4aa7-a9ed-0b9f7ea437d7 10068 127.0.0.1 10069 
+Dec 05 22:49:48.551 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Intranet 0 0 udp-ccb0c5d2-4918-4aa7-a9ed-0b9f7ea437d7 
+Dec 05 22:49:48.561 HYPERVISOR: exec_cmd: vm get_status Intranet 
+Dec 05 23:00:00.192 HYPERVISOR: exec_cmd: vm get_status Intranet 
+Dec 05 23:00:00.204 HYPERVISOR: exec_cmd: vm extract_config Intranet 
+Dec 05 23:00:00.214 HYPERVISOR: exec_cmd: vm delete Intranet 
+Dec 05 23:00:00.214 VM: VM Intranet destroyed.
+Dec 05 23:00:00.224 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 05 23:00:00.334 HYPERVISOR: Stopped.
+Dec 05 23:00:00.334 GENERAL: reset done.

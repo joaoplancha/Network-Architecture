@@ -1,0 +1,28 @@
+Dec 05 22:49:45.274 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 05 22:49:45.274 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 55321.
+Dec 05 22:49:45.388 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 05 22:49:45.391 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/part2/project-files/dynamips 
+Dec 05 22:49:45.391 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/part2/project-files/dynamips
+Dec 05 22:49:45.393 HYPERVISOR: exec_cmd: vm create WEB 7 c3725 
+Dec 05 22:49:45.393 VM: VM WEB created.
+Dec 05 22:49:45.404 HYPERVISOR: exec_cmd: vm set_con_tcp_port WEB 2006 
+Dec 05 22:49:45.441 HYPERVISOR: exec_cmd: c3725 get_mac_addr WEB 
+Dec 05 22:49:45.451 HYPERVISOR: exec_cmd: c3725 set_mac_addr WEB c207.1060.0000 
+Dec 05 22:49:45.460 HYPERVISOR: exec_cmd: vm set_ios WEB /home/joao/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 05 22:49:45.471 HYPERVISOR: exec_cmd: vm get_status WEB 
+Dec 05 22:49:45.489 HYPERVISOR: exec_cmd: vm set_idle_pc WEB 0x60a6a390 
+Dec 05 22:49:45.493 HYPERVISOR: exec_cmd: vm get_status WEB 
+Dec 05 22:49:45.561 HYPERVISOR: exec_cmd: vm slot_add_binding WEB 1 0 NM-1FE-TX 
+Dec 05 22:49:45.601 HYPERVISOR: exec_cmd: vm set_nvram WEB 256 
+Dec 05 22:49:45.610 HYPERVISOR: exec_cmd: vm set_disk0 WEB 0 
+Dec 05 22:49:45.620 HYPERVISOR: exec_cmd: vm set_config WEB configs/i7_startup-config.cfg 
+Dec 05 22:49:47.482 HYPERVISOR: exec_cmd: nio create_udp udp-d63f8cc9-7c18-4d51-8b0a-516a35e3c106 10028 127.0.0.1 10029 
+Dec 05 22:49:47.486 HYPERVISOR: exec_cmd: vm slot_add_nio_binding WEB 0 0 udp-d63f8cc9-7c18-4d51-8b0a-516a35e3c106 
+Dec 05 22:49:47.489 HYPERVISOR: exec_cmd: vm get_status WEB 
+Dec 05 23:00:00.192 HYPERVISOR: exec_cmd: vm get_status WEB 
+Dec 05 23:00:00.204 HYPERVISOR: exec_cmd: vm extract_config WEB 
+Dec 05 23:00:00.214 HYPERVISOR: exec_cmd: vm delete WEB 
+Dec 05 23:00:00.214 VM: VM WEB destroyed.
+Dec 05 23:00:00.223 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 05 23:00:00.388 HYPERVISOR: Stopped.
+Dec 05 23:00:00.388 GENERAL: reset done.

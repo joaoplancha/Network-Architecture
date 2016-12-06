@@ -1,34 +1,22 @@
-Dec 05 19:20:37.585 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
-Dec 05 19:20:37.585 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56695.
-Dec 05 19:20:37.645 HYPERVISOR: exec_cmd: hypervisor version 
-Dec 05 19:20:37.648 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/part2/project-files/dynamips 
-Dec 05 19:20:37.648 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/part2/project-files/dynamips
-Dec 05 19:20:37.653 HYPERVISOR: exec_cmd: vm create R3 10 c3725 
-Dec 05 19:20:37.653 VM: VM R3 created.
-Dec 05 19:20:37.656 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5001 
-Dec 05 19:20:37.659 HYPERVISOR: exec_cmd: c3725 get_mac_addr R3 
-Dec 05 19:20:37.663 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
-Dec 05 19:20:37.667 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
-Dec 05 19:20:37.670 HYPERVISOR: exec_cmd: vm set_ios R3 /home/joao/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
-Dec 05 19:20:37.683 HYPERVISOR: exec_cmd: vm get_status R3 
-Dec 05 19:20:37.688 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 NM-1FE-TX 
-Dec 05 19:20:37.719 HYPERVISOR: exec_cmd: vm get_status R3 
-Dec 05 19:20:37.727 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x60a68e70 
-Dec 05 19:20:37.731 HYPERVISOR: exec_cmd: c3725 set_mac_addr R3 c20a.252f.0000 
-Dec 05 19:20:37.736 HYPERVISOR: exec_cmd: vm set_config R3 configs/i10_startup-config.cfg 
-Dec 05 19:20:39.139 HYPERVISOR: exec_cmd: nio create_udp udp-d5ec676a-cd88-401a-bb0a-6860d0726be2 10002 127.0.0.1 10003 
-Dec 05 19:20:39.140 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-d5ec676a-cd88-401a-bb0a-6860d0726be2 
-Dec 05 19:20:39.141 HYPERVISOR: exec_cmd: vm get_status R3 
-Dec 05 19:20:39.190 HYPERVISOR: exec_cmd: nio create_udp udp-cd858abc-96e4-4fcd-ba77-2567cd5ee1b9 10006 127.0.0.1 10007 
-Dec 05 19:20:39.192 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-cd858abc-96e4-4fcd-ba77-2567cd5ee1b9 
-Dec 05 19:20:39.209 HYPERVISOR: exec_cmd: vm get_status R3 
-Dec 05 19:20:39.294 HYPERVISOR: exec_cmd: nio create_udp udp-de3592aa-0349-4ecf-991a-4ce13211d6a1 10009 127.0.0.1 10008 
-Dec 05 19:20:39.320 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 1 0 udp-de3592aa-0349-4ecf-991a-4ce13211d6a1 
-Dec 05 19:20:39.356 HYPERVISOR: exec_cmd: vm get_status R3 
-Dec 05 19:21:48.101 HYPERVISOR: exec_cmd: vm get_status R3 
-Dec 05 19:21:48.115 HYPERVISOR: exec_cmd: vm extract_config R3 
-Dec 05 19:21:48.124 HYPERVISOR: exec_cmd: vm delete R3 
-Dec 05 19:21:48.124 VM: VM R3 destroyed.
-Dec 05 19:21:48.147 HYPERVISOR: exec_cmd: hypervisor stop 
-Dec 05 19:21:48.201 HYPERVISOR: Stopped.
-Dec 05 19:21:48.201 GENERAL: reset done.
+Dec 06 01:11:25.881 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 06 01:11:25.881 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 48457.
+Dec 06 01:11:26.029 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 06 01:11:26.041 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/part2/project-files/dynamips 
+Dec 06 01:11:26.041 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/part2/project-files/dynamips
+Dec 06 01:11:26.046 HYPERVISOR: exec_cmd: ethsw create SW16 
+Dec 06 01:11:28.223 HYPERVISOR: exec_cmd: nio create_udp udp-432916e1-da7b-4872-b11f-f9f24f183be4 10042 127.0.0.1 10043 
+Dec 06 01:11:28.231 HYPERVISOR: exec_cmd: ethsw add_nio SW16 udp-432916e1-da7b-4872-b11f-f9f24f183be4 
+Dec 06 01:11:28.265 HYPERVISOR: exec_cmd: ethsw set_access_port SW16 udp-432916e1-da7b-4872-b11f-f9f24f183be4 1 
+Dec 06 01:11:28.328 HYPERVISOR: exec_cmd: nio create_udp udp-fd3e6d16-d6b2-4108-8a2d-fc2ee32ee691 10046 127.0.0.1 10045 
+Dec 06 01:11:28.342 HYPERVISOR: exec_cmd: ethsw add_nio SW16 udp-fd3e6d16-d6b2-4108-8a2d-fc2ee32ee691 
+Dec 06 01:11:28.356 HYPERVISOR: exec_cmd: ethsw set_access_port SW16 udp-fd3e6d16-d6b2-4108-8a2d-fc2ee32ee691 1 
+Dec 06 01:11:28.477 HYPERVISOR: exec_cmd: nio create_udp udp-ca061d28-d769-4f01-b0a0-e605227d9b22 10053 127.0.0.1 10052 
+Dec 06 01:11:28.479 HYPERVISOR: exec_cmd: ethsw add_nio SW16 udp-ca061d28-d769-4f01-b0a0-e605227d9b22 
+Dec 06 01:11:28.505 HYPERVISOR: exec_cmd: ethsw set_access_port SW16 udp-ca061d28-d769-4f01-b0a0-e605227d9b22 1 
+Dec 06 01:11:28.974 HYPERVISOR: exec_cmd: nio create_udp udp-f08c5fe6-6ab3-471e-a8c7-ad4590e14f9b 10072 127.0.0.1 10073 
+Dec 06 01:11:28.991 HYPERVISOR: exec_cmd: ethsw add_nio SW16 udp-f08c5fe6-6ab3-471e-a8c7-ad4590e14f9b 
+Dec 06 01:11:29.016 HYPERVISOR: exec_cmd: ethsw set_access_port SW16 udp-f08c5fe6-6ab3-471e-a8c7-ad4590e14f9b 1 
+Dec 06 01:11:47.363 HYPERVISOR: exec_cmd: ethsw delete SW16 
+Dec 06 01:11:47.430 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 06 01:11:47.534 HYPERVISOR: Stopped.
+Dec 06 01:11:47.534 GENERAL: reset done.
