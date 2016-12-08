@@ -1,43 +1,63 @@
 conf t
 int f0/0
-ip add 192.168.20.102 255.255.255.0
+ip add 192.168.20.1 255.255.255.0
 no shut
 
 int  f0/1
-ip add 192.168.30.102 255.255.255.0
+ip add 192.168.30.1 255.255.255.0
 no shut
 
-int f1/0
-ip add 201.3.20.102 255.255.255.0
+int vlan 1
+ip add 201.3.20.1 255.255.255.0
 mpls ip
 no shut
 
 int loopback 0
-ip add 102.102.102.102 255.255.255.255
+ip add 2.2.2.2 255.255.255.255
 no shut
 
 
 router ospf 1
-network 102.102.102.102 0.0.0.0 area 0
+network 2.2.2.2 0.0.0.0 area 0
 network 201.3.20.0 0.0.0.255 area 0
 
 ip vrf Bank1
 rd 100:11
-route-target import 100:11
-route-target export 100:11
+route-target both 100:11
 exit
 ip vrf Bank2
 rd 100:12
-route-target import 100:12
-route-target export 100:12
+route-target both 100:12
 
-ip route vrf Bank1 10.0.0.0 255.255.255.0 192.168.20.2
-ip route vrf Bank2 10.0.0.0 255.255.255.0 192.168.30.3
+ip route vrf Bank1 10.0.2.0 255.255.255.0 192.168.20.2
+ip route vrf Bank2 10.0.3.0 255.255.255.0 192.168.30.2
 
 int f0/0
 ip vrf forwarding Bank1
+ip add 192.168.20.1 255.255.255.0
 int f0/1
 ip vrf forwarding Bank2
+ip add 192.168.30.1 255.255.255.0
+exit
+
+
+router bgp 100
+neighbor 1.1.1.1 remote-as 100
+neighbor 1.1.1.1 update-source loopback0
+neighbor 1.1.1.1 activate
+neighbor 3.3.3.3 remote-as 100
+neighbor 3.3.3.3 update-source loopback0
+neighbor 3.3.3.3 activate
+address-family vpnv4
+neighbor 1.1.1.1 activate
+neighbor 3.3.3.3 activate
+exit
+address-family ipv4 vrf Bank1
+redistribute static
+exit
+address-family ipv4 vrf Bank2
+redistribute static
+
 
 end
 wr
