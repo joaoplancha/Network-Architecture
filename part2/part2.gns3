@@ -55,6 +55,28 @@
         ],
         "links": [
             {
+                "description": "Link from R6 port FastEthernet1/0 to PC1 port Ethernet0",
+                "destination_node_id": 15,
+                "destination_port_id": 62,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0",
+                    "x": 72.49830182933476,
+                    "y": 29.131420606332057
+                },
+                "id": 1,
+                "source_node_id": 133,
+                "source_port_id": 1148,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f1/0",
+                    "x": -24.998301829334764,
+                    "y": 23.368579393667943
+                }
+            },
+            {
                 "description": "Link from SW9 port 2 to PC7 port Ethernet0",
                 "destination_node_id": 21,
                 "destination_port_id": 68,
@@ -65,7 +87,7 @@
                     "x": -16.737820343731755,
                     "y": 10.309040825578734
                 },
-                "id": 1,
+                "id": 2,
                 "source_node_id": 29,
                 "source_port_id": 195,
                 "source_port_label": {
@@ -87,7 +109,7 @@
                     "x": -0.8018531935744022,
                     "y": 51.65821684778854
                 },
-                "id": 2,
+                "id": 3,
                 "source_node_id": 29,
                 "source_port_id": 196,
                 "source_port_label": {
@@ -96,6 +118,72 @@
                     "text": "3",
                     "x": 68.8018531935744,
                     "y": -6.1582168477885375
+                }
+            },
+            {
+                "description": "Link from R3 port FastEthernet1/0 to SW9 port 1",
+                "destination_node_id": 29,
+                "destination_port_id": 194,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "1",
+                    "x": 1.2117083040476473,
+                    "y": -4.598860467833816
+                },
+                "id": 4,
+                "source_node_id": 130,
+                "source_port_id": 1139,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f1/0",
+                    "x": 69.28829169595235,
+                    "y": 23.598860467833816
+                }
+            },
+            {
+                "description": "Link from R1 port FastEthernet0/1 to Intranet port FastEthernet0/0",
+                "destination_node_id": 84,
+                "destination_port_id": 601,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": 59.392819115286045,
+                    "y": 54.05738157801113
+                },
+                "id": 5,
+                "source_node_id": 128,
+                "source_port_id": 1135,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/1",
+                    "x": -31.892819115286045,
+                    "y": -4.557381578011132
+                }
+            },
+            {
+                "description": "Link from R1 port FastEthernet1/0 to Homebanking port FastEthernet0/0",
+                "destination_node_id": 81,
+                "destination_port_id": 592,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": 10.540137501877439,
+                    "y": 71.98496017116082
+                },
+                "id": 6,
+                "source_node_id": 128,
+                "source_port_id": 1133,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f1/0",
+                    "x": 46.95986249812256,
+                    "y": -15.484960171160822
                 }
             },
             {
@@ -109,7 +197,7 @@
                     "x": -8.382950651615545,
                     "y": 37.42131702036461
                 },
-                "id": 5,
+                "id": 7,
                 "source_node_id": 16,
                 "source_port_id": 63,
                 "source_port_label": {
@@ -131,7 +219,7 @@
                     "x": -30.33410849362724,
                     "y": 6.403575682878554
                 },
-                "id": 6,
+                "id": 8,
                 "source_node_id": 105,
                 "source_port_id": 855,
                 "source_port_label": {
@@ -153,7 +241,7 @@
                     "x": -30.38455545398707,
                     "y": 15.799312121175149
                 },
-                "id": 7,
+                "id": 9,
                 "source_node_id": 105,
                 "source_port_id": 856,
                 "source_port_label": {
@@ -175,7 +263,7 @@
                     "x": -29.283661533267434,
                     "y": 24.007839244581973
                 },
-                "id": 8,
+                "id": 10,
                 "source_node_id": 105,
                 "source_port_id": 857,
                 "source_port_label": {
@@ -197,7 +285,7 @@
                     "x": 8.553909398790985,
                     "y": 45.561938388939154
                 },
-                "id": 9,
+                "id": 11,
                 "source_node_id": 17,
                 "source_port_id": 64,
                 "source_port_label": {
@@ -219,7 +307,7 @@
                     "x": 67.40763497180711,
                     "y": 40.12266217700508
                 },
-                "id": 10,
+                "id": 12,
                 "source_node_id": 18,
                 "source_port_id": 65,
                 "source_port_label": {
@@ -241,7 +329,7 @@
                     "x": 53.948353988190775,
                     "y": 26.62022413686978
                 },
-                "id": 11,
+                "id": 13,
                 "source_node_id": 19,
                 "source_port_id": 66,
                 "source_port_label": {
@@ -263,7 +351,7 @@
                     "x": -3.1354964747490754,
                     "y": 24.548778730909675
                 },
-                "id": 12,
+                "id": 14,
                 "source_node_id": 106,
                 "source_port_id": 873,
                 "source_port_label": {
@@ -285,7 +373,7 @@
                     "x": -1.829093816112774,
                     "y": 33.84434167156604
                 },
-                "id": 13,
+                "id": 15,
                 "source_node_id": 106,
                 "source_port_id": 874,
                 "source_port_label": {
@@ -307,7 +395,7 @@
                     "x": -2.441899133385377,
                     "y": 41.25321579025331
                 },
-                "id": 14,
+                "id": 16,
                 "source_node_id": 106,
                 "source_port_id": 875,
                 "source_port_label": {
@@ -451,179 +539,25 @@
                 }
             },
             {
-                "description": "Link from R101 port FastEthernet1/0 to R100 port FastEthernet0/0",
-                "destination_node_id": 124,
-                "destination_port_id": 1102,
+                "description": "Link from R5 port FastEthernet1/0 to ESW7 port FastEthernet2/0",
+                "destination_node_id": 55,
+                "destination_port_id": 1151,
                 "destination_port_label": {
                     "color": "#ff000000",
                     "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/0",
-                    "x": -5.092669396989507,
-                    "y": 34.204447476705354
+                    "text": "f2/0",
+                    "x": 54.325357097891356,
+                    "y": -4.23263038694752
                 },
-                "id": 31,
-                "source_node_id": 122,
-                "source_port_id": 1095,
+                "id": 23,
+                "source_node_id": 132,
+                "source_port_id": 1145,
                 "source_port_label": {
                     "color": "#ff000000",
                     "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
                     "text": "f1/0",
-                    "x": 71.09266939698949,
-                    "y": 9.795552523294646
-                }
-            },
-            {
-                "description": "Link from R1 port FastEthernet0/0 to R101 port FastEthernet0/0",
-                "destination_node_id": 122,
-                "destination_port_id": 1096,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/0",
-                    "x": 6.328540520024802,
-                    "y": -21.67608952641035
-                },
-                "id": 35,
-                "source_node_id": 128,
-                "source_port_id": 1134,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/0",
-                    "x": 63.6714594799752,
-                    "y": 47.67608952641035
-                }
-            },
-            {
-                "description": "Link from R6 port FastEthernet0/0 to R101 port FastEthernet0/1",
-                "destination_node_id": 122,
-                "destination_port_id": 1097,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/1",
-                    "x": -28.47000157740939,
-                    "y": 30.48991336454506
-                },
-                "id": 36,
-                "source_node_id": 133,
-                "source_port_id": 1149,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/0",
-                    "x": 72.47000157740939,
-                    "y": 15.51008663545494
-                }
-            },
-            {
-                "description": "Link from R2 port FastEthernet0/0 to R102 port FastEthernet0/0",
-                "destination_node_id": 123,
-                "destination_port_id": 1099,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/0",
-                    "x": 53.81716204673336,
-                    "y": -12.15619657280422
-                },
-                "id": 37,
-                "source_node_id": 129,
-                "source_port_id": 1137,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/0",
-                    "x": 12.182837953266642,
-                    "y": 56.15619657280422
-                }
-            },
-            {
-                "description": "Link from R3 port FastEthernet0/0 to R102 port FastEthernet0/1",
-                "destination_node_id": 123,
-                "destination_port_id": 1100,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/1",
-                    "x": 72.977480595352,
-                    "y": 23.34203027098971
-                },
-                "id": 38,
-                "source_node_id": 130,
-                "source_port_id": 1140,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/0",
-                    "x": -43.977480595352006,
-                    "y": 18.65796972901029
-                }
-            },
-            {
-                "description": "Link from R6 port FastEthernet1/0 to PC1 port Ethernet0",
-                "destination_node_id": 15,
-                "destination_port_id": 62,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "e0",
-                    "x": 72.49830182933476,
-                    "y": 29.131420606332057
-                },
-                "id": 42,
-                "source_node_id": 133,
-                "source_port_id": 1148,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f1/0",
-                    "x": -24.998301829334764,
-                    "y": 23.368579393667943
-                }
-            },
-            {
-                "description": "Link from R1 port FastEthernet0/1 to Intranet port FastEthernet0/0",
-                "destination_node_id": 84,
-                "destination_port_id": 601,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/0",
-                    "x": 59.392819115286045,
-                    "y": 54.05738157801113
-                },
-                "id": 43,
-                "source_node_id": 128,
-                "source_port_id": 1135,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/1",
-                    "x": -31.892819115286045,
-                    "y": -4.557381578011132
-                }
-            },
-            {
-                "description": "Link from R1 port FastEthernet1/0 to Homebanking port FastEthernet0/0",
-                "destination_node_id": 81,
-                "destination_port_id": 592,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/0",
-                    "x": 10.540137501877439,
-                    "y": 71.98496017116082
-                },
-                "id": 44,
-                "source_node_id": 128,
-                "source_port_id": 1133,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f1/0",
-                    "x": 46.95986249812256,
-                    "y": -15.484960171160822
+                    "x": 4.174642902108651,
+                    "y": 49.73263038694752
                 }
             },
             {
@@ -637,7 +571,7 @@
                     "x": 16.834465521209268,
                     "y": 66.3047691134426
                 },
-                "id": 45,
+                "id": 24,
                 "source_node_id": 129,
                 "source_port_id": 1136,
                 "source_port_label": {
@@ -646,72 +580,6 @@
                     "text": "f1/0",
                     "x": 48.66553447879073,
                     "y": -14.804769113442603
-                }
-            },
-            {
-                "description": "Link from R3 port FastEthernet1/0 to SW9 port 1",
-                "destination_node_id": 29,
-                "destination_port_id": 194,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "1",
-                    "x": 1.2117083040476473,
-                    "y": -4.598860467833816
-                },
-                "id": 46,
-                "source_node_id": 130,
-                "source_port_id": 1139,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f1/0",
-                    "x": 69.28829169595235,
-                    "y": 23.598860467833816
-                }
-            },
-            {
-                "description": "Link from R4 port FastEthernet1/0 to PC8 port Ethernet0",
-                "destination_node_id": 127,
-                "destination_port_id": 1122,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "e0",
-                    "x": -0.5639699035687613,
-                    "y": 6.988360916719131
-                },
-                "id": 47,
-                "source_node_id": 131,
-                "source_port_id": 1142,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f1/0",
-                    "x": 66.06396990356876,
-                    "y": 44.51163908328087
-                }
-            },
-            {
-                "description": "Link from R5 port FastEthernet1/0 to ESW7 port FastEthernet2/0",
-                "destination_node_id": 55,
-                "destination_port_id": 1151,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f2/0",
-                    "x": 54.325357097891356,
-                    "y": -4.23263038694752
-                },
-                "id": 48,
-                "source_node_id": 132,
-                "source_port_id": 1145,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f1/0",
-                    "x": 4.174642902108651,
-                    "y": 49.73263038694752
                 }
             },
             {
@@ -725,7 +593,7 @@
                     "x": 53.05771112568928,
                     "y": -12.607632458727956
                 },
-                "id": 49,
+                "id": 25,
                 "source_node_id": 121,
                 "source_port_id": 1093,
                 "source_port_label": {
@@ -747,7 +615,7 @@
                     "x": -1.7654487272429265,
                     "y": 2.217088819047774
                 },
-                "id": 50,
+                "id": 26,
                 "source_node_id": 121,
                 "source_port_id": 1094,
                 "source_port_label": {
@@ -756,6 +624,138 @@
                     "text": "f0/1",
                     "x": 67.76544872724291,
                     "y": 41.782911180952226
+                }
+            },
+            {
+                "description": "Link from R1 port FastEthernet0/0 to R101 port FastEthernet0/0",
+                "destination_node_id": 122,
+                "destination_port_id": 1096,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": 6.328540520024802,
+                    "y": -21.67608952641035
+                },
+                "id": 27,
+                "source_node_id": 128,
+                "source_port_id": 1134,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": 63.6714594799752,
+                    "y": 47.67608952641035
+                }
+            },
+            {
+                "description": "Link from R6 port FastEthernet0/0 to R101 port FastEthernet0/1",
+                "destination_node_id": 122,
+                "destination_port_id": 1097,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/1",
+                    "x": -28.47000157740939,
+                    "y": 30.48991336454506
+                },
+                "id": 28,
+                "source_node_id": 133,
+                "source_port_id": 1149,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": 72.47000157740939,
+                    "y": 15.51008663545494
+                }
+            },
+            {
+                "description": "Link from R4 port FastEthernet1/0 to PC8 port Ethernet0",
+                "destination_node_id": 127,
+                "destination_port_id": 1122,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0",
+                    "x": -0.5639699035687613,
+                    "y": 6.988360916719131
+                },
+                "id": 29,
+                "source_node_id": 131,
+                "source_port_id": 1142,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f1/0",
+                    "x": 66.06396990356876,
+                    "y": 44.51163908328087
+                }
+            },
+            {
+                "description": "Link from R2 port FastEthernet0/0 to R102 port FastEthernet0/0",
+                "destination_node_id": 123,
+                "destination_port_id": 1099,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": 53.81716204673336,
+                    "y": -12.15619657280422
+                },
+                "id": 30,
+                "source_node_id": 129,
+                "source_port_id": 1137,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": 12.182837953266642,
+                    "y": 56.15619657280422
+                }
+            },
+            {
+                "description": "Link from R3 port FastEthernet0/0 to R102 port FastEthernet0/1",
+                "destination_node_id": 123,
+                "destination_port_id": 1100,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/1",
+                    "x": 72.977480595352,
+                    "y": 23.34203027098971
+                },
+                "id": 31,
+                "source_node_id": 130,
+                "source_port_id": 1140,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": -43.977480595352006,
+                    "y": 18.65796972901029
+                }
+            },
+            {
+                "description": "Link from R101 port FastEthernet1/0 to R100 port FastEthernet0/0",
+                "destination_node_id": 124,
+                "destination_port_id": 1102,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": -5.092669396989507,
+                    "y": 34.204447476705354
+                },
+                "id": 32,
+                "source_node_id": 122,
+                "source_port_id": 1095,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f1/0",
+                    "x": 71.09266939698949,
+                    "y": 9.795552523294646
                 }
             },
             {
@@ -769,7 +769,7 @@
                     "x": -36.673089648979754,
                     "y": 12.896475952440824
                 },
-                "id": 52,
+                "id": 33,
                 "source_node_id": 124,
                 "source_port_id": 1103,
                 "source_port_label": {
@@ -791,7 +791,7 @@
                     "x": 32.359025537445355,
                     "y": -17.994864067006816
                 },
-                "id": 53,
+                "id": 34,
                 "source_node_id": 124,
                 "source_port_id": 1101,
                 "source_port_label": {
@@ -804,6 +804,417 @@
             }
         ],
         "nodes": [
+            {
+                "description": "Router c3725",
+                "dynamips_id": 9,
+                "id": 128,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R1",
+                    "x": 16.4375,
+                    "y": 20.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to Homebanking on port FastEthernet0/0",
+                        "id": 1133,
+                        "link_id": 6,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R101 on port FastEthernet0/0",
+                        "id": 1134,
+                        "link_id": 27,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to Intranet on port FastEthernet0/0",
+                        "id": 1135,
+                        "link_id": 5,
+                        "name": "FastEthernet0/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "clock_divisor": 8,
+                    "console": 2005,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x60a6a390",
+                    "idlesleep": 30,
+                    "image": "c3725-advipservicesk9-mz.124-21.image",
+                    "image_md5sum": "c336fa915d7ecd3b821c5e562c4326ab",
+                    "iomem": 5,
+                    "mac_addr": "c209.74d5.0000",
+                    "mmap": true,
+                    "name": "R1",
+                    "nvram": 256,
+                    "platform": "c3725",
+                    "ram": 128,
+                    "slot0": "GT96100-FE",
+                    "slot1": "NM-1FE-TX",
+                    "sparsemem": true,
+                    "startup_config": "configs/i9_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 1,
+                "type": "C3725",
+                "vm_id": "331e9df2-3265-4441-9e0a-1f1f46a2304f",
+                "x": -292.0,
+                "y": -317.0
+            },
+            {
+                "description": "Router c3725",
+                "dynamips_id": 12,
+                "id": 129,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R2",
+                    "x": 21.4375,
+                    "y": 20.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to PC2 on port Ethernet0",
+                        "id": 1136,
+                        "link_id": 24,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R102 on port FastEthernet0/0",
+                        "id": 1137,
+                        "link_id": 30,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 1138,
+                        "name": "FastEthernet0/1",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "clock_divisor": 8,
+                    "console": 2012,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x60a6a390",
+                    "idlesleep": 30,
+                    "image": "c3725-advipservicesk9-mz.124-21.image",
+                    "image_md5sum": "c336fa915d7ecd3b821c5e562c4326ab",
+                    "iomem": 5,
+                    "mac_addr": "c20c.74e4.0000",
+                    "mmap": true,
+                    "name": "R2",
+                    "nvram": 256,
+                    "platform": "c3725",
+                    "ram": 128,
+                    "slot0": "GT96100-FE",
+                    "slot1": "NM-1FE-TX",
+                    "sparsemem": true,
+                    "startup_config": "configs/i12_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 1,
+                "type": "C3725",
+                "vm_id": "64fbc212-14bf-4296-ba0a-60ede5c28ab4",
+                "x": 281.0,
+                "y": -342.0
+            },
+            {
+                "description": "Router c3725",
+                "dynamips_id": 15,
+                "id": 130,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R3",
+                    "x": 21.4375,
+                    "y": 19.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to SW9 on port 1",
+                        "id": 1139,
+                        "link_id": 4,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R102 on port FastEthernet0/1",
+                        "id": 1140,
+                        "link_id": 31,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 1141,
+                        "name": "FastEthernet0/1",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "clock_divisor": 8,
+                    "console": 2014,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x60a6a390",
+                    "idlesleep": 30,
+                    "image": "c3725-advipservicesk9-mz.124-21.image",
+                    "image_md5sum": "c336fa915d7ecd3b821c5e562c4326ab",
+                    "iomem": 5,
+                    "mac_addr": "c20f.74f3.0000",
+                    "mmap": true,
+                    "name": "R3",
+                    "nvram": 256,
+                    "platform": "c3725",
+                    "ram": 128,
+                    "slot0": "GT96100-FE",
+                    "slot1": "NM-1FE-TX",
+                    "sparsemem": true,
+                    "startup_config": "configs/i15_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 1,
+                "type": "C3725",
+                "vm_id": "aec2dd13-1fd0-44da-97d6-e529d32fbb08",
+                "x": 413.0,
+                "y": -202.0
+            },
+            {
+                "description": "Router c3725",
+                "dynamips_id": 16,
+                "id": 131,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R4",
+                    "x": 20.4375,
+                    "y": 20.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to PC8 on port Ethernet0",
+                        "id": 1142,
+                        "link_id": 29,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R103 on port FastEthernet0/1",
+                        "id": 1143,
+                        "link_id": 26,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 1144,
+                        "name": "FastEthernet0/1",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "clock_divisor": 8,
+                    "console": 2015,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x60a6a390",
+                    "idlesleep": 30,
+                    "image": "c3725-advipservicesk9-mz.124-21.image",
+                    "image_md5sum": "c336fa915d7ecd3b821c5e562c4326ab",
+                    "iomem": 5,
+                    "mac_addr": "c210.7502.0000",
+                    "mmap": true,
+                    "name": "R4",
+                    "nvram": 256,
+                    "platform": "c3725",
+                    "ram": 128,
+                    "slot0": "GT96100-FE",
+                    "slot1": "NM-1FE-TX",
+                    "sparsemem": true,
+                    "startup_config": "configs/i16_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 1,
+                "type": "C3725",
+                "vm_id": "c7176471-aa1c-4818-ad9e-a752dd41f0f5",
+                "x": 340.0,
+                "y": 70.0
+            },
+            {
+                "description": "Router c3725",
+                "dynamips_id": 20,
+                "id": 132,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R5",
+                    "x": 16.4375,
+                    "y": 19.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to ESW7 on port FastEthernet2/0",
+                        "id": 1145,
+                        "link_id": 23,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R103 on port FastEthernet0/0",
+                        "id": 1146,
+                        "link_id": 25,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 1147,
+                        "name": "FastEthernet0/1",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "clock_divisor": 8,
+                    "console": 2016,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x60a6a390",
+                    "idlesleep": 30,
+                    "image": "c3725-advipservicesk9-mz.124-21.image",
+                    "image_md5sum": "c336fa915d7ecd3b821c5e562c4326ab",
+                    "iomem": 5,
+                    "mac_addr": "c214.7511.0000",
+                    "mmap": true,
+                    "name": "R5",
+                    "nvram": 256,
+                    "platform": "c3725",
+                    "ram": 128,
+                    "slot0": "GT96100-FE",
+                    "slot1": "NM-1FE-TX",
+                    "sparsemem": true,
+                    "startup_config": "configs/i20_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 1,
+                "type": "C3725",
+                "vm_id": "8593b6dc-9860-42db-9b65-d65ee3df1b94",
+                "x": -58.0,
+                "y": 45.0
+            },
+            {
+                "description": "Router c3725",
+                "dynamips_id": 21,
+                "id": 133,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R6",
+                    "x": 19.4375,
+                    "y": 21.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to PC1 on port Ethernet0",
+                        "id": 1148,
+                        "link_id": 1,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R101 on port FastEthernet0/1",
+                        "id": 1149,
+                        "link_id": 28,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 1150,
+                        "name": "FastEthernet0/1",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "clock_divisor": 8,
+                    "console": 2017,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x60a6a390",
+                    "idlesleep": 30,
+                    "image": "c3725-advipservicesk9-mz.124-21.image",
+                    "image_md5sum": "c336fa915d7ecd3b821c5e562c4326ab",
+                    "iomem": 5,
+                    "mac_addr": "c215.7520.0000",
+                    "mmap": true,
+                    "name": "R6",
+                    "nvram": 256,
+                    "platform": "c3725",
+                    "ram": 128,
+                    "slot0": "GT96100-FE",
+                    "slot1": "NM-1FE-TX",
+                    "sparsemem": true,
+                    "startup_config": "configs/i21_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 1,
+                "type": "C3725",
+                "vm_id": "ba0432f9-5121-42a1-bab7-033e65a34c5b",
+                "x": -367.0,
+                "y": -126.0
+            },
             {
                 "description": "VPCS device",
                 "id": 15,
@@ -819,7 +1230,7 @@
                         "adapter_number": 0,
                         "description": "connected to R6 on port FastEthernet1/0",
                         "id": 62,
-                        "link_id": 42,
+                        "link_id": 1,
                         "name": "Ethernet0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -852,7 +1263,7 @@
                         "adapter_number": 0,
                         "description": "connected to SW11 on port FastEthernet1/7",
                         "id": 63,
-                        "link_id": 5,
+                        "link_id": 7,
                         "name": "Ethernet0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -871,70 +1282,37 @@
                 "y": 243.53910524340085
             },
             {
-                "description": "Router c3725",
-                "dynamips_id": 7,
-                "id": 81,
+                "description": "VPCS device",
+                "id": 17,
                 "label": {
                     "color": "#ff000000",
                     "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "Homebanking",
-                    "x": -24.96875,
+                    "text": "PC3 - vlan 3",
+                    "x": -10.6171875,
                     "y": -25.0
                 },
                 "ports": [
                     {
-                        "adapter_number": 1,
-                        "id": 591,
-                        "name": "FastEthernet1/0",
-                        "port_number": 0
-                    },
-                    {
                         "adapter_number": 0,
-                        "description": "connected to R1 on port FastEthernet1/0",
-                        "id": 592,
-                        "link_id": 44,
-                        "name": "FastEthernet0/0",
+                        "description": "connected to SW12 on port FastEthernet1/10",
+                        "id": 64,
+                        "link_id": 11,
+                        "name": "Ethernet0",
                         "nio": "NIO_UDP",
                         "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "id": 593,
-                        "name": "FastEthernet0/1",
-                        "port_number": 1
                     }
                 ],
                 "properties": {
-                    "auto_delete_disks": true,
-                    "clock_divisor": 8,
-                    "console": 2006,
-                    "disk0": 0,
-                    "disk1": 0,
-                    "exec_area": 64,
-                    "idlemax": 500,
-                    "idlepc": "0x60a6a390",
-                    "idlesleep": 30,
-                    "image": "c3725-advipservicesk9-mz.124-21.image",
-                    "image_md5sum": "c336fa915d7ecd3b821c5e562c4326ab",
-                    "iomem": 5,
-                    "mac_addr": "c207.1060.0000",
-                    "mmap": true,
-                    "name": "Homebanking",
-                    "nvram": 256,
-                    "platform": "c3725",
-                    "ram": 128,
-                    "slot0": "GT96100-FE",
-                    "slot1": "NM-1FE-TX",
-                    "sparsemem": true,
-                    "startup_config": "configs/i7_startup-config.cfg",
-                    "system_id": "FTX0945W0MY"
+                    "console": 5008,
+                    "name": "PC3 - vlan 3",
+                    "startup_script_path": "startup.vpc"
                 },
                 "server_id": 1,
-                "symbol": ":/symbols/server.svg",
-                "type": "C3725",
-                "vm_id": "4907fe6a-cda3-404e-a72b-ae7c97f36f49",
-                "x": -241.110606331155,
-                "y": -443.3238097667514
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "type": "VPCSDevice",
+                "vm_id": "a8a24461-cf6e-43e6-825b-d5611b33271a",
+                "x": -219.11269837220811,
+                "y": 321.53910524340085
             },
             {
                 "description": "VPCS device",
@@ -951,7 +1329,7 @@
                         "adapter_number": 0,
                         "description": "connected to SW12 on port FastEthernet1/13",
                         "id": 65,
-                        "link_id": 10,
+                        "link_id": 12,
                         "name": "Ethernet0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -984,7 +1362,7 @@
                         "adapter_number": 0,
                         "description": "connected to SW10 on port FastEthernet1/10",
                         "id": 66,
-                        "link_id": 11,
+                        "link_id": 13,
                         "name": "Ethernet0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -1017,7 +1395,7 @@
                         "adapter_number": 0,
                         "description": "connected to SW9 on port 3",
                         "id": 67,
-                        "link_id": 2,
+                        "link_id": 3,
                         "name": "Ethernet0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -1050,7 +1428,7 @@
                         "adapter_number": 0,
                         "description": "connected to SW9 on port 2",
                         "id": 68,
-                        "link_id": 1,
+                        "link_id": 2,
                         "name": "Ethernet0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -1083,7 +1461,7 @@
                     {
                         "description": "connected to R3 on port FastEthernet1/0",
                         "id": 194,
-                        "link_id": 46,
+                        "link_id": 4,
                         "name": "1",
                         "nio": "NIO_UDP",
                         "port_number": 1,
@@ -1093,7 +1471,7 @@
                     {
                         "description": "connected to PC7 on port Ethernet0",
                         "id": 195,
-                        "link_id": 1,
+                        "link_id": 2,
                         "name": "2",
                         "nio": "NIO_UDP",
                         "port_number": 2,
@@ -1103,7 +1481,7 @@
                     {
                         "description": "connected to PC6 on port Ethernet0",
                         "id": 196,
-                        "link_id": 2,
+                        "link_id": 3,
                         "name": "3",
                         "nio": "NIO_UDP",
                         "port_number": 3,
@@ -1176,7 +1554,7 @@
                         "adapter_number": 0,
                         "description": "connected to R1 on port FastEthernet0/1",
                         "id": 601,
-                        "link_id": 43,
+                        "link_id": 5,
                         "name": "FastEthernet0/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -1221,37 +1599,70 @@
                 "y": -406.2527419548859
             },
             {
-                "description": "VPCS device",
-                "id": 17,
+                "description": "Router c3725",
+                "dynamips_id": 7,
+                "id": 81,
                 "label": {
                     "color": "#ff000000",
                     "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "PC3 - vlan 3",
-                    "x": -10.6171875,
+                    "text": "Homebanking",
+                    "x": -24.96875,
                     "y": -25.0
                 },
                 "ports": [
                     {
+                        "adapter_number": 1,
+                        "id": 591,
+                        "name": "FastEthernet1/0",
+                        "port_number": 0
+                    },
+                    {
                         "adapter_number": 0,
-                        "description": "connected to SW12 on port FastEthernet1/10",
-                        "id": 64,
-                        "link_id": 9,
-                        "name": "Ethernet0",
+                        "description": "connected to R1 on port FastEthernet1/0",
+                        "id": 592,
+                        "link_id": 6,
+                        "name": "FastEthernet0/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 593,
+                        "name": "FastEthernet0/1",
+                        "port_number": 1
                     }
                 ],
                 "properties": {
-                    "console": 5008,
-                    "name": "PC3 - vlan 3",
-                    "startup_script_path": "startup.vpc"
+                    "auto_delete_disks": true,
+                    "clock_divisor": 8,
+                    "console": 2006,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x60a6a390",
+                    "idlesleep": 30,
+                    "image": "c3725-advipservicesk9-mz.124-21.image",
+                    "image_md5sum": "c336fa915d7ecd3b821c5e562c4326ab",
+                    "iomem": 5,
+                    "mac_addr": "c207.1060.0000",
+                    "mmap": true,
+                    "name": "Homebanking",
+                    "nvram": 256,
+                    "platform": "c3725",
+                    "ram": 128,
+                    "slot0": "GT96100-FE",
+                    "slot1": "NM-1FE-TX",
+                    "sparsemem": true,
+                    "startup_config": "configs/i7_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
                 },
                 "server_id": 1,
-                "symbol": ":/symbols/vpcs_guest.svg",
-                "type": "VPCSDevice",
-                "vm_id": "a8a24461-cf6e-43e6-825b-d5611b33271a",
-                "x": -219.11269837220811,
-                "y": 321.53910524340085
+                "symbol": ":/symbols/server.svg",
+                "type": "C3725",
+                "vm_id": "4907fe6a-cda3-404e-a72b-ae7c97f36f49",
+                "x": -287.110606331155,
+                "y": -433.3238097667514
             },
             {
                 "description": "Router c3725",
@@ -1296,7 +1707,7 @@
                         "adapter_number": 1,
                         "description": "connected to SW12 on port FastEthernet1/0",
                         "id": 855,
-                        "link_id": 6,
+                        "link_id": 8,
                         "name": "FastEthernet1/3",
                         "nio": "NIO_UDP",
                         "port_number": 3
@@ -1305,7 +1716,7 @@
                         "adapter_number": 1,
                         "description": "connected to SW12 on port FastEthernet1/1",
                         "id": 856,
-                        "link_id": 7,
+                        "link_id": 9,
                         "name": "FastEthernet1/4",
                         "nio": "NIO_UDP",
                         "port_number": 4
@@ -1314,7 +1725,7 @@
                         "adapter_number": 1,
                         "description": "connected to SW12 on port FastEthernet1/2",
                         "id": 857,
-                        "link_id": 8,
+                        "link_id": 10,
                         "name": "FastEthernet1/5",
                         "nio": "NIO_UDP",
                         "port_number": 5
@@ -1329,7 +1740,7 @@
                         "adapter_number": 1,
                         "description": "connected to PC2 - vlan 2 on port Ethernet0",
                         "id": 859,
-                        "link_id": 5,
+                        "link_id": 7,
                         "name": "FastEthernet1/7",
                         "nio": "NIO_UDP",
                         "port_number": 7
@@ -1443,7 +1854,7 @@
                         "adapter_number": 1,
                         "description": "connected to SW11 on port FastEthernet1/3",
                         "id": 870,
-                        "link_id": 6,
+                        "link_id": 8,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -1452,7 +1863,7 @@
                         "adapter_number": 1,
                         "description": "connected to SW11 on port FastEthernet1/4",
                         "id": 871,
-                        "link_id": 7,
+                        "link_id": 9,
                         "name": "FastEthernet1/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -1461,7 +1872,7 @@
                         "adapter_number": 1,
                         "description": "connected to SW11 on port FastEthernet1/5",
                         "id": 872,
-                        "link_id": 8,
+                        "link_id": 10,
                         "name": "FastEthernet1/2",
                         "nio": "NIO_UDP",
                         "port_number": 2
@@ -1470,7 +1881,7 @@
                         "adapter_number": 1,
                         "description": "connected to SW10 on port FastEthernet1/0",
                         "id": 873,
-                        "link_id": 12,
+                        "link_id": 14,
                         "name": "FastEthernet1/3",
                         "nio": "NIO_UDP",
                         "port_number": 3
@@ -1479,7 +1890,7 @@
                         "adapter_number": 1,
                         "description": "connected to SW10 on port FastEthernet1/1",
                         "id": 874,
-                        "link_id": 13,
+                        "link_id": 15,
                         "name": "FastEthernet1/4",
                         "nio": "NIO_UDP",
                         "port_number": 4
@@ -1488,7 +1899,7 @@
                         "adapter_number": 1,
                         "description": "connected to SW10 on port FastEthernet1/2",
                         "id": 875,
-                        "link_id": 14,
+                        "link_id": 16,
                         "name": "FastEthernet1/5",
                         "nio": "NIO_UDP",
                         "port_number": 5
@@ -1521,7 +1932,7 @@
                         "adapter_number": 1,
                         "description": "connected to PC3 - vlan 3 on port Ethernet0",
                         "id": 880,
-                        "link_id": 9,
+                        "link_id": 11,
                         "name": "FastEthernet1/10",
                         "nio": "NIO_UDP",
                         "port_number": 10
@@ -1542,7 +1953,7 @@
                         "adapter_number": 1,
                         "description": "connected to PC4 - vlan 4 on port Ethernet0",
                         "id": 883,
-                        "link_id": 10,
+                        "link_id": 12,
                         "name": "FastEthernet1/13",
                         "nio": "NIO_UDP",
                         "port_number": 13
@@ -1620,7 +2031,7 @@
                         "adapter_number": 1,
                         "description": "connected to SW12 on port FastEthernet1/3",
                         "id": 888,
-                        "link_id": 12,
+                        "link_id": 14,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -1629,7 +2040,7 @@
                         "adapter_number": 1,
                         "description": "connected to SW12 on port FastEthernet1/4",
                         "id": 889,
-                        "link_id": 13,
+                        "link_id": 15,
                         "name": "FastEthernet1/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -1638,7 +2049,7 @@
                         "adapter_number": 1,
                         "description": "connected to SW12 on port FastEthernet1/5",
                         "id": 890,
-                        "link_id": 14,
+                        "link_id": 16,
                         "name": "FastEthernet1/2",
                         "nio": "NIO_UDP",
                         "port_number": 2
@@ -1698,7 +2109,7 @@
                         "adapter_number": 1,
                         "description": "connected to PC5 - vlan 3 on port Ethernet0",
                         "id": 898,
-                        "link_id": 11,
+                        "link_id": 13,
                         "name": "FastEthernet1/10",
                         "nio": "NIO_UDP",
                         "port_number": 10
@@ -1790,6 +2201,15 @@
                     "y": 10.355339059327378
                 },
                 "ports": [
+                    {
+                        "adapter_number": 2,
+                        "description": "connected to R5 on port FastEthernet1/0",
+                        "id": 1151,
+                        "link_id": 23,
+                        "name": "FastEthernet2/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
                     {
                         "adapter_number": 1,
                         "description": "connected to SW11 on port FastEthernet1/0",
@@ -1915,15 +2335,6 @@
                         "id": 418,
                         "name": "FastEthernet0/1",
                         "port_number": 1
-                    },
-                    {
-                        "adapter_number": 2,
-                        "description": "connected to R5 on port FastEthernet1/0",
-                        "id": 1151,
-                        "link_id": 48,
-                        "name": "FastEthernet2/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
                     }
                 ],
                 "properties": {
@@ -1975,7 +2386,7 @@
                         "adapter_number": 1,
                         "description": "connected to R100 on port FastEthernet1/0",
                         "id": 1092,
-                        "link_id": 53,
+                        "link_id": 34,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -1984,7 +2395,7 @@
                         "adapter_number": 0,
                         "description": "connected to R5 on port FastEthernet0/0",
                         "id": 1093,
-                        "link_id": 49,
+                        "link_id": 25,
                         "name": "FastEthernet0/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -1993,7 +2404,7 @@
                         "adapter_number": 0,
                         "description": "connected to R4 on port FastEthernet0/0",
                         "id": 1094,
-                        "link_id": 50,
+                        "link_id": 26,
                         "name": "FastEthernet0/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -2046,7 +2457,7 @@
                         "adapter_number": 1,
                         "description": "connected to R100 on port FastEthernet0/0",
                         "id": 1095,
-                        "link_id": 31,
+                        "link_id": 32,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -2055,7 +2466,7 @@
                         "adapter_number": 0,
                         "description": "connected to R1 on port FastEthernet0/0",
                         "id": 1096,
-                        "link_id": 35,
+                        "link_id": 27,
                         "name": "FastEthernet0/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -2064,7 +2475,7 @@
                         "adapter_number": 0,
                         "description": "connected to R6 on port FastEthernet0/0",
                         "id": 1097,
-                        "link_id": 36,
+                        "link_id": 28,
                         "name": "FastEthernet0/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -2117,7 +2528,7 @@
                         "adapter_number": 1,
                         "description": "connected to R100 on port FastEthernet0/1",
                         "id": 1098,
-                        "link_id": 52,
+                        "link_id": 33,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -2126,7 +2537,7 @@
                         "adapter_number": 0,
                         "description": "connected to R2 on port FastEthernet0/0",
                         "id": 1099,
-                        "link_id": 37,
+                        "link_id": 30,
                         "name": "FastEthernet0/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -2135,7 +2546,7 @@
                         "adapter_number": 0,
                         "description": "connected to R3 on port FastEthernet0/0",
                         "id": 1100,
-                        "link_id": 38,
+                        "link_id": 31,
                         "name": "FastEthernet0/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -2185,10 +2596,16 @@
                 },
                 "ports": [
                     {
+                        "adapter_number": 2,
+                        "id": 1104,
+                        "name": "FastEthernet2/0",
+                        "port_number": 0
+                    },
+                    {
                         "adapter_number": 1,
                         "description": "connected to R103 on port FastEthernet1/0",
                         "id": 1101,
-                        "link_id": 53,
+                        "link_id": 34,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -2197,7 +2614,7 @@
                         "adapter_number": 0,
                         "description": "connected to R101 on port FastEthernet1/0",
                         "id": 1102,
-                        "link_id": 31,
+                        "link_id": 32,
                         "name": "FastEthernet0/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -2206,16 +2623,10 @@
                         "adapter_number": 0,
                         "description": "connected to R102 on port FastEthernet1/0",
                         "id": 1103,
-                        "link_id": 52,
+                        "link_id": 33,
                         "name": "FastEthernet0/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
-                    },
-                    {
-                        "adapter_number": 2,
-                        "id": 1104,
-                        "name": "FastEthernet2/0",
-                        "port_number": 0
                     }
                 ],
                 "properties": {
@@ -2265,7 +2676,7 @@
                         "adapter_number": 0,
                         "description": "connected to R2 on port FastEthernet1/0",
                         "id": 1105,
-                        "link_id": 45,
+                        "link_id": 24,
                         "name": "Ethernet0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -2298,7 +2709,7 @@
                         "adapter_number": 0,
                         "description": "connected to R4 on port FastEthernet1/0",
                         "id": 1122,
-                        "link_id": 47,
+                        "link_id": 29,
                         "name": "Ethernet0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -2315,417 +2726,6 @@
                 "vm_id": "354b034c-2981-40a7-ab64-0deceab81461",
                 "x": 434.5,
                 "y": 126.5
-            },
-            {
-                "description": "Router c3725",
-                "dynamips_id": 9,
-                "id": 128,
-                "label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "R1",
-                    "x": 16.4375,
-                    "y": 20.0
-                },
-                "ports": [
-                    {
-                        "adapter_number": 1,
-                        "description": "connected to Homebanking on port FastEthernet0/0",
-                        "id": 1133,
-                        "link_id": 44,
-                        "name": "FastEthernet1/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "description": "connected to R101 on port FastEthernet0/0",
-                        "id": 1134,
-                        "link_id": 35,
-                        "name": "FastEthernet0/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "description": "connected to Intranet on port FastEthernet0/0",
-                        "id": 1135,
-                        "link_id": 43,
-                        "name": "FastEthernet0/1",
-                        "nio": "NIO_UDP",
-                        "port_number": 1
-                    }
-                ],
-                "properties": {
-                    "auto_delete_disks": true,
-                    "clock_divisor": 8,
-                    "console": 2005,
-                    "disk0": 0,
-                    "disk1": 0,
-                    "exec_area": 64,
-                    "idlemax": 500,
-                    "idlepc": "0x60a6a390",
-                    "idlesleep": 30,
-                    "image": "c3725-advipservicesk9-mz.124-21.image",
-                    "image_md5sum": "c336fa915d7ecd3b821c5e562c4326ab",
-                    "iomem": 5,
-                    "mac_addr": "c209.74d5.0000",
-                    "mmap": true,
-                    "name": "R1",
-                    "nvram": 256,
-                    "platform": "c3725",
-                    "ram": 128,
-                    "slot0": "GT96100-FE",
-                    "slot1": "NM-1FE-TX",
-                    "sparsemem": true,
-                    "startup_config": "configs/i9_startup-config.cfg",
-                    "system_id": "FTX0945W0MY"
-                },
-                "server_id": 1,
-                "type": "C3725",
-                "vm_id": "331e9df2-3265-4441-9e0a-1f1f46a2304f",
-                "x": -292.0,
-                "y": -317.0
-            },
-            {
-                "description": "Router c3725",
-                "dynamips_id": 12,
-                "id": 129,
-                "label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "R2",
-                    "x": 21.4375,
-                    "y": 20.0
-                },
-                "ports": [
-                    {
-                        "adapter_number": 1,
-                        "description": "connected to PC2 on port Ethernet0",
-                        "id": 1136,
-                        "link_id": 45,
-                        "name": "FastEthernet1/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "description": "connected to R102 on port FastEthernet0/0",
-                        "id": 1137,
-                        "link_id": 37,
-                        "name": "FastEthernet0/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "id": 1138,
-                        "name": "FastEthernet0/1",
-                        "port_number": 1
-                    }
-                ],
-                "properties": {
-                    "auto_delete_disks": true,
-                    "clock_divisor": 8,
-                    "console": 2012,
-                    "disk0": 0,
-                    "disk1": 0,
-                    "exec_area": 64,
-                    "idlemax": 500,
-                    "idlepc": "0x60a6a390",
-                    "idlesleep": 30,
-                    "image": "c3725-advipservicesk9-mz.124-21.image",
-                    "image_md5sum": "c336fa915d7ecd3b821c5e562c4326ab",
-                    "iomem": 5,
-                    "mac_addr": "c20c.74e4.0000",
-                    "mmap": true,
-                    "name": "R2",
-                    "nvram": 256,
-                    "platform": "c3725",
-                    "ram": 128,
-                    "slot0": "GT96100-FE",
-                    "slot1": "NM-1FE-TX",
-                    "sparsemem": true,
-                    "startup_config": "configs/i12_startup-config.cfg",
-                    "system_id": "FTX0945W0MY"
-                },
-                "server_id": 1,
-                "type": "C3725",
-                "vm_id": "64fbc212-14bf-4296-ba0a-60ede5c28ab4",
-                "x": 281.0,
-                "y": -342.0
-            },
-            {
-                "description": "Router c3725",
-                "dynamips_id": 15,
-                "id": 130,
-                "label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "R3",
-                    "x": 21.4375,
-                    "y": 19.0
-                },
-                "ports": [
-                    {
-                        "adapter_number": 1,
-                        "description": "connected to SW9 on port 1",
-                        "id": 1139,
-                        "link_id": 46,
-                        "name": "FastEthernet1/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "description": "connected to R102 on port FastEthernet0/1",
-                        "id": 1140,
-                        "link_id": 38,
-                        "name": "FastEthernet0/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "id": 1141,
-                        "name": "FastEthernet0/1",
-                        "port_number": 1
-                    }
-                ],
-                "properties": {
-                    "auto_delete_disks": true,
-                    "clock_divisor": 8,
-                    "console": 2014,
-                    "disk0": 0,
-                    "disk1": 0,
-                    "exec_area": 64,
-                    "idlemax": 500,
-                    "idlepc": "0x60a6a390",
-                    "idlesleep": 30,
-                    "image": "c3725-advipservicesk9-mz.124-21.image",
-                    "image_md5sum": "c336fa915d7ecd3b821c5e562c4326ab",
-                    "iomem": 5,
-                    "mac_addr": "c20f.74f3.0000",
-                    "mmap": true,
-                    "name": "R3",
-                    "nvram": 256,
-                    "platform": "c3725",
-                    "ram": 128,
-                    "slot0": "GT96100-FE",
-                    "slot1": "NM-1FE-TX",
-                    "sparsemem": true,
-                    "startup_config": "configs/i15_startup-config.cfg",
-                    "system_id": "FTX0945W0MY"
-                },
-                "server_id": 1,
-                "type": "C3725",
-                "vm_id": "aec2dd13-1fd0-44da-97d6-e529d32fbb08",
-                "x": 413.0,
-                "y": -202.0
-            },
-            {
-                "description": "Router c3725",
-                "dynamips_id": 16,
-                "id": 131,
-                "label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "R4",
-                    "x": 20.4375,
-                    "y": 20.0
-                },
-                "ports": [
-                    {
-                        "adapter_number": 1,
-                        "description": "connected to PC8 on port Ethernet0",
-                        "id": 1142,
-                        "link_id": 47,
-                        "name": "FastEthernet1/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "description": "connected to R103 on port FastEthernet0/1",
-                        "id": 1143,
-                        "link_id": 50,
-                        "name": "FastEthernet0/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "id": 1144,
-                        "name": "FastEthernet0/1",
-                        "port_number": 1
-                    }
-                ],
-                "properties": {
-                    "auto_delete_disks": true,
-                    "clock_divisor": 8,
-                    "console": 2015,
-                    "disk0": 0,
-                    "disk1": 0,
-                    "exec_area": 64,
-                    "idlemax": 500,
-                    "idlepc": "0x60a6a390",
-                    "idlesleep": 30,
-                    "image": "c3725-advipservicesk9-mz.124-21.image",
-                    "image_md5sum": "c336fa915d7ecd3b821c5e562c4326ab",
-                    "iomem": 5,
-                    "mac_addr": "c210.7502.0000",
-                    "mmap": true,
-                    "name": "R4",
-                    "nvram": 256,
-                    "platform": "c3725",
-                    "ram": 128,
-                    "slot0": "GT96100-FE",
-                    "slot1": "NM-1FE-TX",
-                    "sparsemem": true,
-                    "startup_config": "configs/i16_startup-config.cfg",
-                    "system_id": "FTX0945W0MY"
-                },
-                "server_id": 1,
-                "type": "C3725",
-                "vm_id": "c7176471-aa1c-4818-ad9e-a752dd41f0f5",
-                "x": 340.0,
-                "y": 70.0
-            },
-            {
-                "description": "Router c3725",
-                "dynamips_id": 20,
-                "id": 132,
-                "label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "R5",
-                    "x": 16.4375,
-                    "y": 19.0
-                },
-                "ports": [
-                    {
-                        "adapter_number": 1,
-                        "description": "connected to ESW7 on port FastEthernet2/0",
-                        "id": 1145,
-                        "link_id": 48,
-                        "name": "FastEthernet1/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "description": "connected to R103 on port FastEthernet0/0",
-                        "id": 1146,
-                        "link_id": 49,
-                        "name": "FastEthernet0/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "id": 1147,
-                        "name": "FastEthernet0/1",
-                        "port_number": 1
-                    }
-                ],
-                "properties": {
-                    "auto_delete_disks": true,
-                    "clock_divisor": 8,
-                    "console": 2016,
-                    "disk0": 0,
-                    "disk1": 0,
-                    "exec_area": 64,
-                    "idlemax": 500,
-                    "idlepc": "0x60a6a390",
-                    "idlesleep": 30,
-                    "image": "c3725-advipservicesk9-mz.124-21.image",
-                    "image_md5sum": "c336fa915d7ecd3b821c5e562c4326ab",
-                    "iomem": 5,
-                    "mac_addr": "c214.7511.0000",
-                    "mmap": true,
-                    "name": "R5",
-                    "nvram": 256,
-                    "platform": "c3725",
-                    "ram": 128,
-                    "slot0": "GT96100-FE",
-                    "slot1": "NM-1FE-TX",
-                    "sparsemem": true,
-                    "startup_config": "configs/i20_startup-config.cfg",
-                    "system_id": "FTX0945W0MY"
-                },
-                "server_id": 1,
-                "type": "C3725",
-                "vm_id": "8593b6dc-9860-42db-9b65-d65ee3df1b94",
-                "x": -58.0,
-                "y": 45.0
-            },
-            {
-                "description": "Router c3725",
-                "dynamips_id": 21,
-                "id": 133,
-                "label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "R6",
-                    "x": 19.4375,
-                    "y": 21.0
-                },
-                "ports": [
-                    {
-                        "adapter_number": 1,
-                        "description": "connected to PC1 on port Ethernet0",
-                        "id": 1148,
-                        "link_id": 42,
-                        "name": "FastEthernet1/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "description": "connected to R101 on port FastEthernet0/1",
-                        "id": 1149,
-                        "link_id": 36,
-                        "name": "FastEthernet0/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "id": 1150,
-                        "name": "FastEthernet0/1",
-                        "port_number": 1
-                    }
-                ],
-                "properties": {
-                    "auto_delete_disks": true,
-                    "clock_divisor": 8,
-                    "console": 2017,
-                    "disk0": 0,
-                    "disk1": 0,
-                    "exec_area": 64,
-                    "idlemax": 500,
-                    "idlepc": "0x60a6a390",
-                    "idlesleep": 30,
-                    "image": "c3725-advipservicesk9-mz.124-21.image",
-                    "image_md5sum": "c336fa915d7ecd3b821c5e562c4326ab",
-                    "iomem": 5,
-                    "mac_addr": "c215.7520.0000",
-                    "mmap": true,
-                    "name": "R6",
-                    "nvram": 256,
-                    "platform": "c3725",
-                    "ram": 128,
-                    "slot0": "GT96100-FE",
-                    "slot1": "NM-1FE-TX",
-                    "sparsemem": true,
-                    "startup_config": "configs/i21_startup-config.cfg",
-                    "system_id": "FTX0945W0MY"
-                },
-                "server_id": 1,
-                "type": "C3725",
-                "vm_id": "ba0432f9-5121-42a1-bab7-033e65a34c5b",
-                "x": -367.0,
-                "y": -126.0
             }
         ],
         "notes": [

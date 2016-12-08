@@ -21,5 +21,20 @@ router ospf 1
 network 101.101.101.101 0.0.0.0 area 0
 network 201.3.10.0 0.0.0.255 area 0
 
+
+ip vrf Bank1
+rd 100:11
+route-target import 100:11
+route-target export 100:11
+exit
+ip vrf Bank2
+rd 100:12
+route-target import 100:12
+route-target export 100:12
+
+ip route vrf Bank1 10.0.0.0 255.255.255.0 192.168.10.1
+ip route vrf Bank1 10.0.1.0 255.255.255.0 192.168.10.1
+ip route vrf Bank2 10.0.0.0 255.255.255.0 192.168.60.6
+
 end
 wr
