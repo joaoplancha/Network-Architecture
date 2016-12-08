@@ -1,0 +1,44 @@
+Dec 07 23:28:07.771 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 07 23:28:07.771 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 35436.
+Dec 07 23:28:07.786 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 07 23:28:07.787 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/part2/project-files/dynamips 
+Dec 07 23:28:07.787 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/part2/project-files/dynamips
+Dec 07 23:28:07.788 HYPERVISOR: exec_cmd: vm create R2 12 c3725 
+Dec 07 23:28:07.789 VM: VM R2 created.
+Dec 07 23:28:07.790 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 2012 
+Dec 07 23:28:07.792 HYPERVISOR: exec_cmd: c3725 get_mac_addr R2 
+Dec 07 23:28:07.793 HYPERVISOR: exec_cmd: vm set_ios R2 /home/joao/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 07 23:28:07.794 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Dec 07 23:28:07.794 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Dec 07 23:28:07.795 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 07 23:28:07.796 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60a6a390 
+Dec 07 23:28:07.796 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 07 23:28:07.797 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-1FE-TX 
+Dec 07 23:28:07.798 HYPERVISOR: exec_cmd: vm set_config R2 configs/i12_startup-config.cfg 
+Dec 07 23:28:45.081 HYPERVISOR: exec_cmd: nio create_udp udp-693ab708-3554-4761-a35e-1515c70da9a1 10029 127.0.0.1 10028 
+Dec 07 23:28:45.090 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-693ab708-3554-4761-a35e-1515c70da9a1 
+Dec 07 23:28:45.091 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 07 23:32:03.693 HYPERVISOR: exec_cmd: nio create_udp udp-79d35e4a-f307-4e7d-886d-dbcbbadb3dc8 10057 127.0.0.1 10056 
+Dec 07 23:32:03.714 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 0 udp-79d35e4a-f307-4e7d-886d-dbcbbadb3dc8 
+Dec 07 23:32:03.714 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 07 23:46:31.626 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Dec 07 23:46:31.631 HYPERVISOR: exec_cmd: vm set_ghost_file R2 c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Dec 07 23:46:31.632 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 07 23:46:31.634 HYPERVISOR: exec_cmd: vm start R2 
+Dec 07 23:48:48.436 HYPERVISOR: exec_cmd: vm extract_config R2 
+Dec 08 00:21:35.448 HYPERVISOR: exec_cmd: vm extract_config R2 
+Dec 08 00:21:56.843 HYPERVISOR: exec_cmd: vm extract_config R2 
+Dec 08 00:21:57.621 HYPERVISOR: exec_cmd: vm extract_config R2 
+Dec 08 00:55:19.856 HYPERVISOR: exec_cmd: vm extract_config R2 
+Dec 08 00:58:28.149 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 08 00:58:28.197 HYPERVISOR: exec_cmd: vm stop R2 
+Dec 08 00:58:28.390 VM: VM R2 shutdown.
+Dec 08 00:58:28.549 HYPERVISOR: exec_cmd: vm extract_config R2 
+Dec 08 00:58:30.190 HYPERVISOR: exec_cmd: vm extract_config R2 
+Dec 08 00:59:17.384 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 08 00:59:17.393 HYPERVISOR: exec_cmd: vm extract_config R2 
+Dec 08 00:59:17.402 HYPERVISOR: exec_cmd: vm delete R2 
+Dec 08 00:59:17.506 VM: VM R2 destroyed.
+Dec 08 00:59:17.547 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 08 00:59:17.656 HYPERVISOR: Stopped.
+Dec 08 00:59:17.656 GENERAL: reset done.

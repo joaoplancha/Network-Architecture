@@ -1,0 +1,25 @@
+conf t
+int f0/0
+ip add 192.168.20.102 255.255.255.0
+no shut
+
+int  f0/1
+ip add 192.168.30.102 255.255.255.0
+no shut
+
+int f1/0
+ip add 201.3.20.102 255.255.255.0
+mpls ip
+no shut
+
+int loopback 0
+ip add 102.102.102.102 255.255.255.255
+no shut
+
+
+router ospf 1
+network 102.102.102.102 0.0.0.0 area 0
+network 201.3.20.0 0.0.0.255 area 0
+
+end
+wr

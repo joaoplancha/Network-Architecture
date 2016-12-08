@@ -1,63 +1,24 @@
-Dec 05 23:11:46.927 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
-Dec 05 23:11:46.928 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 39598.
-Dec 05 23:11:46.938 HYPERVISOR: exec_cmd: hypervisor version 
-Dec 05 23:11:46.940 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/part2/project-files/dynamips 
-Dec 05 23:11:46.940 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/part2/project-files/dynamips
-Dec 05 23:11:46.941 HYPERVISOR: exec_cmd: vm create ESW1 6 c3725 
-Dec 05 23:11:46.941 VM: VM ESW1 created.
-Dec 05 23:11:46.943 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW1 2010 
-Dec 05 23:11:46.944 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW1 
-Dec 05 23:11:46.945 HYPERVISOR: exec_cmd: vm set_nvram ESW1 256 
-Dec 05 23:11:46.946 HYPERVISOR: exec_cmd: vm get_status ESW1 
-Dec 05 23:11:46.947 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 1 0 NM-16ESW 
-Dec 05 23:11:46.948 HYPERVISOR: exec_cmd: vm set_ios ESW1 /home/joao/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
-Dec 05 23:11:46.949 HYPERVISOR: exec_cmd: vm get_status ESW1 
-Dec 05 23:11:46.952 HYPERVISOR: exec_cmd: vm set_idle_pc ESW1 0x60a68e70 
-Dec 05 23:11:46.952 HYPERVISOR: exec_cmd: vm set_disk0 ESW1 1 
-Dec 05 23:11:46.954 HYPERVISOR: exec_cmd: vm set_config ESW1 configs/i6_startup-config.cfg 
-Dec 05 23:12:09.810 HYPERVISOR: exec_cmd: nio create_udp udp-029adb39-5595-40c2-872f-3019e84423a4 10072 127.0.0.1 10073 
-Dec 05 23:12:09.824 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 0 udp-029adb39-5595-40c2-872f-3019e84423a4 
-Dec 05 23:12:09.825 HYPERVISOR: exec_cmd: vm get_status ESW1 
-Dec 05 23:12:14.261 HYPERVISOR: exec_cmd: nio create_udp udp-0ca34fa4-1cde-4854-bf77-79ad68bffc9b 10074 127.0.0.1 10075 
-Dec 05 23:12:14.270 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 1 udp-0ca34fa4-1cde-4854-bf77-79ad68bffc9b 
-Dec 05 23:12:14.272 HYPERVISOR: exec_cmd: vm get_status ESW1 
-Dec 05 23:12:42.207 HYPERVISOR: exec_cmd: vm set_ghost_status ESW1 2 
-Dec 05 23:12:42.208 HYPERVISOR: exec_cmd: vm set_ghost_file ESW1 c3725-advipservicesk9-mz.124-21.image-128.ghost 
-Dec 05 23:12:42.215 HYPERVISOR: exec_cmd: vm get_status ESW1 
-Dec 05 23:12:42.218 HYPERVISOR: exec_cmd: vm start ESW1 
-Dec 05 23:26:24.557 HYPERVISOR: exec_cmd: nio create_udp udp-7abb1f28-729d-4b1b-8ed0-5780b0d209a4 10076 127.0.0.1 10077 
-Dec 05 23:26:24.557 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 2 udp-7abb1f28-729d-4b1b-8ed0-5780b0d209a4 
-Dec 05 23:26:24.558 HYPERVISOR: exec_cmd: vm get_status ESW1 
-Dec 05 23:26:24.559 HYPERVISOR: exec_cmd: vm slot_enable_nio ESW1 1 2 
-Dec 05 23:27:58.666 HYPERVISOR: exec_cmd: vm get_status ESW1 
-Dec 05 23:27:58.667 HYPERVISOR: exec_cmd: vm stop ESW1 
-Dec 05 23:27:58.907 VM: VM ESW1 shutdown.
-Dec 05 23:27:58.912 HYPERVISOR: exec_cmd: vm extract_config ESW1 
-Dec 05 23:28:02.934 HYPERVISOR: exec_cmd: vm get_status ESW1 
-Dec 05 23:28:02.937 HYPERVISOR: exec_cmd: vm start ESW1 
-Dec 05 23:33:34.526 HYPERVISOR: exec_cmd: vm get_status ESW1 
-Dec 05 23:33:34.526 HYPERVISOR: exec_cmd: vm stop ESW1 
-Dec 05 23:33:34.726 VM: VM ESW1 shutdown.
-Dec 05 23:33:34.730 HYPERVISOR: exec_cmd: vm extract_config ESW1 
-Dec 05 23:33:38.493 HYPERVISOR: exec_cmd: vm get_status ESW1 
-Dec 05 23:33:38.497 HYPERVISOR: exec_cmd: vm start ESW1 
-Dec 05 23:35:21.596 HYPERVISOR: exec_cmd: vm get_status ESW1 
-Dec 05 23:35:21.599 HYPERVISOR: exec_cmd: vm stop ESW1 
-Dec 05 23:35:21.815 VM: VM ESW1 shutdown.
-Dec 05 23:35:21.819 HYPERVISOR: exec_cmd: vm extract_config ESW1 
-Dec 05 23:35:27.932 HYPERVISOR: exec_cmd: vm get_status ESW1 
-Dec 05 23:35:27.940 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ESW1 1 2 
-Dec 05 23:35:27.943 HYPERVISOR: exec_cmd: nio delete udp-7abb1f28-729d-4b1b-8ed0-5780b0d209a4 
-Dec 05 23:35:27.973 HYPERVISOR: exec_cmd: vm get_status ESW1 
-Dec 05 23:35:27.974 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ESW1 1 0 
-Dec 05 23:35:27.975 HYPERVISOR: exec_cmd: nio delete udp-029adb39-5595-40c2-872f-3019e84423a4 
-Dec 05 23:35:27.987 HYPERVISOR: exec_cmd: vm get_status ESW1 
-Dec 05 23:35:27.988 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ESW1 1 1 
-Dec 05 23:35:27.990 HYPERVISOR: exec_cmd: nio delete udp-0ca34fa4-1cde-4854-bf77-79ad68bffc9b 
-Dec 05 23:35:28.017 HYPERVISOR: exec_cmd: vm get_status ESW1 
-Dec 05 23:35:28.018 HYPERVISOR: exec_cmd: vm extract_config ESW1 
-Dec 05 23:35:28.020 HYPERVISOR: exec_cmd: vm delete ESW1 
-Dec 05 23:35:28.020 VM: VM ESW1 destroyed.
-Dec 05 23:35:28.021 HYPERVISOR: exec_cmd: hypervisor stop 
-Dec 05 23:35:28.128 HYPERVISOR: Stopped.
-Dec 05 23:35:28.128 GENERAL: reset done.
+Dec 07 23:26:09.963 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 07 23:26:09.963 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54650.
+Dec 07 23:26:09.977 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 07 23:26:09.978 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/part2/project-files/dynamips 
+Dec 07 23:26:09.978 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/part2/project-files/dynamips
+Dec 07 23:26:09.979 HYPERVISOR: exec_cmd: vm create R3 12 c3725 
+Dec 07 23:26:09.979 VM: VM R3 created.
+Dec 07 23:26:09.979 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 2014 
+Dec 07 23:26:09.980 HYPERVISOR: exec_cmd: c3725 get_mac_addr R3 
+Dec 07 23:26:09.981 HYPERVISOR: exec_cmd: vm set_ios R3 /home/joao/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 07 23:26:09.983 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Dec 07 23:26:09.983 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Dec 07 23:26:09.984 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 07 23:26:09.985 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x60a6a390 
+Dec 07 23:26:09.985 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 07 23:26:09.986 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 NM-1FE-TX 
+Dec 07 23:26:09.987 HYPERVISOR: exec_cmd: vm set_config R3 configs/i12_startup-config.cfg 
+Dec 07 23:26:19.364 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 07 23:26:19.364 HYPERVISOR: exec_cmd: vm extract_config R3 
+Dec 07 23:26:19.365 HYPERVISOR: exec_cmd: vm delete R3 
+Dec 07 23:26:19.365 VM: VM R3 destroyed.
+Dec 07 23:26:19.366 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 07 23:26:19.487 HYPERVISOR: Stopped.
+Dec 07 23:26:19.487 GENERAL: reset done.
