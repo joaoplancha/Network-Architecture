@@ -1,0 +1,95 @@
+vlan database
+vlan 2 name A
+vlan 3 name B
+vlan 4 name C
+apply
+exit 
+
+conf t
+
+int f2/0
+ip add 10.0.5.7 255.255.255.0
+no shut
+
+int vlan 2
+ip add 10.0.10.62 255.255.255.192
+
+int vlan 3
+ip add 10.0.10.126 255.255.255.192
+
+int vlan 4
+ip add 10.0.10.190 255.255.255.192
+
+int range fa1/0 - 2
+switchport trunk encapsulation dot
+switchport mode trunk
+channel-group 1 mode on
+exit
+interface port-channel 1
+switchport trunk encapsulation dot
+switchport mode trunk
+
+int range fa1/3 - 5
+switchport trunk encapsulation dot
+switchport mode trunk
+channel-group 4 mode on
+exit
+interface port-channel 4
+switchport trunk encapsulation dot
+switchport mode trunk
+
+int range fa1/7 - 9
+switchport mode access
+switchport access vlan 2
+
+int range fa1/10 - 12
+switchport mode access
+switchport access vlan 3
+
+int range fa1/13 - 15
+switchport mode access
+switchport access vlan 4
+
+ip dhcp excluded-address 10.0.10.62
+ip dhcp excluded-address 10.0.10.126
+ip dhcp excluded-address 10.0.10.190
+
+ip dhcp pool vlan2A
+network 10.0.10.0 255.255.255.192
+default-router 10.0.10.62 
+
+ip dhcp pool vlan3B
+network 10.0.10.64 255.255.255.192
+default-router 10.0.10.126 
+
+ip dhcp pool vlan3C
+network 10.0.10.128 255.255.255.192
+default-router 10.0.10.190 
+
+service dhcp
+
+access-list 10 permit 10.0.10.0 0.0.0.63
+access-list 10 permit 10.0.10.64 0.0.0.63
+access-list 10 permit 10.0.10.128 0.0.0.63
+
+int vlan 2
+ip nat inside
+
+int vlan 3
+ip nat inside
+
+int vlan 4
+ip nat inside
+
+int f2/0
+ip nat outside 
+
+ip nat inside source list 10 interface FastEthernet2/0 overload
+
+ip route 0.0.0.0 0.0.0.0 10.0.5.5 
+
+end
+
+wr
+
+
