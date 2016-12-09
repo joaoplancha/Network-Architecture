@@ -1,51 +1,35 @@
-Dec 09 19:41:28.761 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
-Dec 09 19:41:28.761 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 39656.
-Dec 09 19:41:28.888 HYPERVISOR: exec_cmd: hypervisor version 
-Dec 09 19:41:28.890 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/part2/project-files/dynamips 
-Dec 09 19:41:28.890 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/part2/project-files/dynamips
-Dec 09 19:41:28.894 HYPERVISOR: exec_cmd: vm create HomeBanking 13 c3725 
-Dec 09 19:41:28.894 VM: VM HomeBanking created.
-Dec 09 19:41:28.898 HYPERVISOR: exec_cmd: vm set_con_tcp_port HomeBanking 2009 
-Dec 09 19:41:28.902 HYPERVISOR: exec_cmd: c3725 get_mac_addr HomeBanking 
-Dec 09 19:41:28.905 HYPERVISOR: exec_cmd: vm set_nvram HomeBanking 256 
-Dec 09 19:41:28.908 HYPERVISOR: exec_cmd: vm get_status HomeBanking 
-Dec 09 19:41:28.911 HYPERVISOR: exec_cmd: vm set_idle_pc HomeBanking 0x60a6a390 
-Dec 09 19:41:28.914 HYPERVISOR: exec_cmd: vm set_disk0 HomeBanking 0 
-Dec 09 19:41:28.917 HYPERVISOR: exec_cmd: c3725 set_mac_addr HomeBanking c20d.108d.0000 
-Dec 09 19:41:28.920 HYPERVISOR: exec_cmd: vm set_ios HomeBanking /home/joao/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
-Dec 09 19:41:28.923 HYPERVISOR: exec_cmd: vm get_status HomeBanking 
-Dec 09 19:41:28.942 HYPERVISOR: exec_cmd: vm slot_add_binding HomeBanking 1 0 NM-1FE-TX 
-Dec 09 19:41:28.962 HYPERVISOR: exec_cmd: vm set_config HomeBanking configs/i13_startup-config.cfg 
-Dec 09 19:41:29.972 HYPERVISOR: exec_cmd: nio create_udp udp-ae52973e-3b24-4e69-b589-d658ce8c0456 10004 127.0.0.1 10002 
-Dec 09 19:41:29.991 HYPERVISOR: exec_cmd: vm slot_add_nio_binding HomeBanking 0 0 udp-ae52973e-3b24-4e69-b589-d658ce8c0456 
-Dec 09 19:41:29.994 HYPERVISOR: exec_cmd: vm get_status HomeBanking 
-Dec 09 19:42:55.426 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
-Dec 09 19:42:55.426 VM: VM Ghost created.
-Dec 09 19:42:55.437 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/joao/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
-Dec 09 19:42:55.439 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
-Dec 09 19:42:55.440 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3725-advipservicesk9-mz.124-21.image-128.ghost 
-Dec 09 19:42:55.441 HYPERVISOR: exec_cmd: vm get_status Ghost 
-Dec 09 19:42:55.441 HYPERVISOR: exec_cmd: vm start Ghost 
-Dec 09 19:42:55.782 HYPERVISOR: exec_cmd: vm get_status Ghost 
-Dec 09 19:42:55.784 HYPERVISOR: exec_cmd: vm stop Ghost 
-Dec 09 19:42:55.893 VM: VM Ghost shutdown.
-Dec 09 19:42:55.895 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
-Dec 09 19:42:55.895 VM: VM Ghost destroyed.
-Dec 09 19:42:55.897 HYPERVISOR: exec_cmd: vm set_ghost_status HomeBanking 2 
-Dec 09 19:42:55.898 HYPERVISOR: exec_cmd: vm set_ghost_file HomeBanking c3725-advipservicesk9-mz.124-21.image-128.ghost 
-Dec 09 19:42:55.899 HYPERVISOR: exec_cmd: vm get_status HomeBanking 
-Dec 09 19:42:55.900 HYPERVISOR: exec_cmd: vm start HomeBanking 
-Dec 09 19:47:18.250 HYPERVISOR: exec_cmd: vm get_status HomeBanking 
-Dec 09 19:47:18.251 HYPERVISOR: exec_cmd: vm stop HomeBanking 
-Dec 09 19:47:18.462 VM: VM HomeBanking shutdown.
-Dec 09 19:47:18.471 HYPERVISOR: exec_cmd: vm extract_config HomeBanking 
-Dec 09 19:49:01.151 HYPERVISOR: exec_cmd: vm get_status HomeBanking 
-Dec 09 19:49:01.152 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding HomeBanking 0 0 
-Dec 09 19:49:01.153 HYPERVISOR: exec_cmd: nio delete udp-ae52973e-3b24-4e69-b589-d658ce8c0456 
-Dec 09 19:49:44.441 HYPERVISOR: exec_cmd: vm get_status HomeBanking 
-Dec 09 19:49:44.441 HYPERVISOR: exec_cmd: vm extract_config HomeBanking 
-Dec 09 19:49:44.442 HYPERVISOR: exec_cmd: vm delete HomeBanking 
-Dec 09 19:49:44.442 VM: VM HomeBanking destroyed.
-Dec 09 19:49:44.443 HYPERVISOR: exec_cmd: hypervisor stop 
-Dec 09 19:49:44.868 HYPERVISOR: Stopped.
-Dec 09 19:49:44.885 GENERAL: reset done.
+Dec 09 20:21:22.991 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 09 20:21:22.991 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 37316.
+Dec 09 20:21:23.122 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 09 20:21:23.131 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/part2/project-files/dynamips 
+Dec 09 20:21:23.131 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/part2/project-files/dynamips
+Dec 09 20:21:23.134 HYPERVISOR: exec_cmd: vm create R100 2 c3725 
+Dec 09 20:21:23.135 VM: VM R100 created.
+Dec 09 20:21:23.140 HYPERVISOR: exec_cmd: vm set_con_tcp_port R100 2008 
+Dec 09 20:21:23.143 HYPERVISOR: exec_cmd: c3725 get_mac_addr R100 
+Dec 09 20:21:23.148 HYPERVISOR: exec_cmd: vm set_disk0 R100 0 
+Dec 09 20:21:23.153 HYPERVISOR: exec_cmd: c3725 set_mac_addr R100 c202.164a.0000 
+Dec 09 20:21:23.158 HYPERVISOR: exec_cmd: vm set_nvram R100 256 
+Dec 09 20:21:23.162 HYPERVISOR: exec_cmd: vm set_ios R100 /home/joao/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 09 20:21:23.166 HYPERVISOR: exec_cmd: vm get_status R100 
+Dec 09 20:21:23.169 HYPERVISOR: exec_cmd: vm set_idle_pc R100 0x60a6a390 
+Dec 09 20:21:23.174 HYPERVISOR: exec_cmd: vm get_status R100 
+Dec 09 20:21:23.180 HYPERVISOR: exec_cmd: vm slot_add_binding R100 1 0 NM-16ESW 
+Dec 09 20:21:23.197 HYPERVISOR: exec_cmd: vm set_config R100 configs/i2_startup-config.cfg 
+Dec 09 20:21:24.742 HYPERVISOR: exec_cmd: nio create_udp udp-d2394651-826c-4b09-9223-23af6d99af2e 10007 127.0.0.1 10006 
+Dec 09 20:21:24.776 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R100 0 0 udp-d2394651-826c-4b09-9223-23af6d99af2e 
+Dec 09 20:21:24.791 HYPERVISOR: exec_cmd: vm get_status R100 
+Dec 09 20:21:24.895 HYPERVISOR: exec_cmd: nio create_udp udp-94872a97-1b3c-4015-b4b2-ce69e5445238 10012 127.0.0.1 10013 
+Dec 09 20:21:24.920 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R100 0 1 udp-94872a97-1b3c-4015-b4b2-ce69e5445238 
+Dec 09 20:21:24.932 HYPERVISOR: exec_cmd: vm get_status R100 
+Dec 09 20:21:25.098 HYPERVISOR: exec_cmd: nio create_udp udp-d82f35f2-16bd-4d8a-82e4-cd4b87d70432 10019 127.0.0.1 10018 
+Dec 09 20:21:25.156 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R100 1 0 udp-d82f35f2-16bd-4d8a-82e4-cd4b87d70432 
+Dec 09 20:21:25.192 HYPERVISOR: exec_cmd: vm get_status R100 
+Dec 09 20:25:56.153 HYPERVISOR: exec_cmd: vm extract_config R100 
+Dec 09 20:26:13.708 HYPERVISOR: exec_cmd: vm get_status R100 
+Dec 09 20:26:13.718 HYPERVISOR: exec_cmd: vm extract_config R100 
+Dec 09 20:26:13.727 HYPERVISOR: exec_cmd: vm delete R100 
+Dec 09 20:26:13.727 VM: VM R100 destroyed.
+Dec 09 20:26:13.735 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 09 20:26:13.955 HYPERVISOR: Stopped.
+Dec 09 20:26:13.956 GENERAL: reset done.
