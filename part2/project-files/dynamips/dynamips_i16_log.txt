@@ -1,28 +1,33 @@
-Dec 09 18:24:49.046 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
-Dec 09 18:24:49.046 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 38101.
-Dec 09 18:24:49.079 HYPERVISOR: exec_cmd: hypervisor version 
-Dec 09 18:24:49.101 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/part2/project-files/dynamips 
-Dec 09 18:24:49.101 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/part2/project-files/dynamips
-Dec 09 18:24:49.129 HYPERVISOR: exec_cmd: vm create Intranet 13 c3725 
-Dec 09 18:24:49.129 VM: VM Intranet created.
-Dec 09 18:24:49.135 HYPERVISOR: exec_cmd: vm set_con_tcp_port Intranet 2009 
-Dec 09 18:24:49.137 HYPERVISOR: exec_cmd: c3725 get_mac_addr Intranet 
-Dec 09 18:24:49.140 HYPERVISOR: exec_cmd: vm set_nvram Intranet 256 
-Dec 09 18:24:49.142 HYPERVISOR: exec_cmd: vm get_status Intranet 
-Dec 09 18:24:49.145 HYPERVISOR: exec_cmd: vm set_idle_pc Intranet 0x60a6a390 
-Dec 09 18:24:49.161 HYPERVISOR: exec_cmd: vm set_disk0 Intranet 0 
-Dec 09 18:24:49.166 HYPERVISOR: exec_cmd: vm set_ios Intranet /home/joao/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
-Dec 09 18:24:49.191 HYPERVISOR: exec_cmd: vm get_status Intranet 
-Dec 09 18:24:49.207 HYPERVISOR: exec_cmd: vm slot_add_binding Intranet 1 0 NM-1FE-TX 
-Dec 09 18:24:49.220 HYPERVISOR: exec_cmd: c3725 set_mac_addr Intranet c20d.108d.0000 
-Dec 09 18:24:49.223 HYPERVISOR: exec_cmd: vm set_config Intranet configs/i13_startup-config.cfg 
-Dec 09 18:24:50.673 HYPERVISOR: exec_cmd: nio create_udp udp-6d0b951e-3441-4853-a6db-eb779ee32059 10051 127.0.0.1 10050 
-Dec 09 18:24:50.691 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Intranet 0 0 udp-6d0b951e-3441-4853-a6db-eb779ee32059 
-Dec 09 18:24:50.694 HYPERVISOR: exec_cmd: vm get_status Intranet 
-Dec 09 18:24:53.920 HYPERVISOR: exec_cmd: vm get_status Intranet 
-Dec 09 18:24:53.931 HYPERVISOR: exec_cmd: vm extract_config Intranet 
-Dec 09 18:24:53.939 HYPERVISOR: exec_cmd: vm delete Intranet 
-Dec 09 18:24:53.939 VM: VM Intranet destroyed.
-Dec 09 18:24:53.949 HYPERVISOR: exec_cmd: hypervisor stop 
-Dec 09 18:24:54.075 HYPERVISOR: Stopped.
-Dec 09 18:24:54.075 GENERAL: reset done.
+Dec 09 18:33:44.268 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 09 18:33:44.268 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 43313.
+Dec 09 18:33:44.297 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 09 18:33:44.300 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/part2/project-files/dynamips 
+Dec 09 18:33:44.300 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/part2/project-files/dynamips
+Dec 09 18:33:44.303 HYPERVISOR: exec_cmd: vm create Intranet 13 c3725 
+Dec 09 18:33:44.303 VM: VM Intranet created.
+Dec 09 18:33:44.306 HYPERVISOR: exec_cmd: vm set_con_tcp_port Intranet 2009 
+Dec 09 18:33:44.309 HYPERVISOR: exec_cmd: c3725 get_mac_addr Intranet 
+Dec 09 18:33:44.326 HYPERVISOR: exec_cmd: c3725 set_mac_addr Intranet c20d.108d.0000 
+Dec 09 18:33:44.340 HYPERVISOR: exec_cmd: vm set_nvram Intranet 256 
+Dec 09 18:33:44.345 HYPERVISOR: exec_cmd: vm set_disk0 Intranet 0 
+Dec 09 18:33:44.348 HYPERVISOR: exec_cmd: vm get_status Intranet 
+Dec 09 18:33:44.372 HYPERVISOR: exec_cmd: vm set_idle_pc Intranet 0x60a6a390 
+Dec 09 18:33:44.378 HYPERVISOR: exec_cmd: vm get_status Intranet 
+Dec 09 18:33:44.390 HYPERVISOR: exec_cmd: vm slot_add_binding Intranet 1 0 NM-1FE-TX 
+Dec 09 18:33:44.392 HYPERVISOR: exec_cmd: vm set_ios Intranet /home/joao/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 09 18:33:44.394 HYPERVISOR: exec_cmd: vm set_config Intranet configs/i13_startup-config.cfg 
+Dec 09 18:33:46.101 HYPERVISOR: exec_cmd: nio create_udp udp-97a2b289-f356-4b66-a403-2d9ed5e27052 10065 127.0.0.1 10064 
+Dec 09 18:33:46.103 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Intranet 0 0 udp-97a2b289-f356-4b66-a403-2d9ed5e27052 
+Dec 09 18:33:46.112 HYPERVISOR: exec_cmd: vm get_status Intranet 
+Dec 09 18:42:13.351 HYPERVISOR: exec_cmd: vm rename Intranet HomeBanking 
+Dec 09 18:43:03.356 HYPERVISOR: exec_cmd: vm extract_config HomeBanking 
+Dec 09 18:47:12.482 HYPERVISOR: exec_cmd: vm extract_config HomeBanking 
+Dec 09 19:32:27.227 HYPERVISOR: exec_cmd: vm extract_config HomeBanking 
+Dec 09 19:35:46.647 HYPERVISOR: exec_cmd: vm extract_config HomeBanking 
+Dec 09 19:36:04.515 HYPERVISOR: exec_cmd: vm get_status HomeBanking 
+Dec 09 19:36:04.528 HYPERVISOR: exec_cmd: vm extract_config HomeBanking 
+Dec 09 19:36:04.538 HYPERVISOR: exec_cmd: vm delete HomeBanking 
+Dec 09 19:36:04.538 VM: VM HomeBanking destroyed.
+Dec 09 19:36:04.548 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 09 19:36:04.946 HYPERVISOR: Stopped.
+Dec 09 19:36:04.946 GENERAL: reset done.

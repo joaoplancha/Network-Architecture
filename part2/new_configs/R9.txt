@@ -1,0 +1,41 @@
+conf t
+
+ipv6 unicast-routing
+ipv6 router ospf 1
+router-id 9.9.9.9
+
+int f0/0
+ip add 201.3.4.67 255.255.255.192
+ipv6 add 2001:db8:3:79::9/64
+ipv6 ospf 1 area 4
+no shut
+
+int f0/1
+ip add 201.3.4.131 255.255.255.192
+ipv6 add 2001:db8:3:89::9/64
+ipv6 ospf 1 area 4
+no shut
+
+int f1/0
+ip add 201.3.4.3 255.255.255.192
+ipv6 add 2001:db8:3:99::9/64
+ipv6 ospf 1 area 4
+no shut
+
+router ospf 1
+router-id 9.9.9.9
+network 201.3.4.0 0.0.0.63 area 4
+network 201.3.4.128 0.0.0.63 area 4
+network 201.3.4.64 0.0.0.63 area 4
+
+router eigrp 100
+network 201.3.4.0 0.0.0.63
+network 201.3.4.64 0.0.0.63
+network 201.3.4.128 0.0.0.63
+no auto-summary
+
+end
+
+wr
+
+

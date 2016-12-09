@@ -1,0 +1,45 @@
+conf t
+
+int f0/0
+ip add 201.3.4.65 255.255.255.192
+ipv6 add 2001:db8:3:79::7/64
+no shut
+
+int f0/1
+ip add 201.3.4.193 255.255.255.192
+ipv6 add 2001:db8:3:78::7/64
+no shut
+
+int f1/0
+ip add 201.3.0.1 255.255.255.240
+ipv6 add 2001:db8:3:17::7/64
+no shut
+
+router ospf 1
+router-id 7.7.7.7
+network 201.3.4.64 0.0.0.63 area 4
+network 201.3.4.192 0.0.0.63 area 4
+network 201.3.0.0 0.0.0.15 area 1
+
+
+ipv6 unicast-routing
+ipv6 router ospf 1
+router-id 7.7.7.7
+int f0/0
+ipv6 ospf 1 area 4
+int f0/1
+ipv6 ospf 1 area 4
+int f1/0
+ipv6 ospf 1 area 1
+
+router eigrp 100
+network 201.3.0.0 0.0.0.15
+network 201.3.4.64 0.0.0.63
+network 201.3.4.192 0.0.0.63
+no auto-summary
+
+end
+
+wr
+
+
