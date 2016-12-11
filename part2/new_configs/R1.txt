@@ -1,5 +1,7 @@
 conf t
 
+ipv6 unicast-routing
+
 int f0/0
 ip add 192.168.10.2 255.255.255.0
 no shut
@@ -13,10 +15,19 @@ ip add 201.3.0.2 255.255.255.240
 ipv6 add 2001:db8:3:17::7/64
 no shut
 
-router eigrp 100
-network 201.3.0.0 0.0.0.15
+int tunnel 1
+ip address 222.222.98.1 255.255.255.0
+tunnel source 201.3.0.2
+tunnel destination 201.3.4.131
+
+router ospf 1
+router-id 0.0.0.1
+log-adjacency-changes
+network 10.0.1.0 0.0.0.255 area 0
+network 222.222.98.0 0.0.0.255 area 0
 
 ip route 0.0.0.0 0.0.0.0 192.168.10.1
+ip route 201.3.4.131 255.255.255.255 201.3.0.1
 
 end
 wr

@@ -22,17 +22,30 @@ ipv6 add 2001:db8:3:99::9/64
 ipv6 ospf 1 area 4
 no shut
 
+int tunnel 0
+ip address 222.222.99.9 255.255.255.0
+tunnel source 201.3.4.131
+tunnel destination 201.3.0.18
+
+int tunnel 1
+ip address 222.222.98.9 255.255.255.0
+tunnel source 201.3.4.131
+tunnel destination 201.3.0.2
+
 router ospf 1
-router-id 9.9.9.9
-network 201.3.4.0 0.0.0.63 area 4
-network 201.3.4.128 0.0.0.63 area 4
-network 201.3.4.64 0.0.0.63 area 4
+router-id 0.0.0.9
+log-adjacency-changes
+network 201.3.4.0 0.0.0.63 area 0
+network 222.222.99.0 0.0.0.255 area 0
+network 222.222.98.0 0.0.0.255 area 0
 
 router eigrp 100
-network 201.3.4.0 0.0.0.63
 network 201.3.4.64 0.0.0.63
 network 201.3.4.128 0.0.0.63
 no auto-summary
+
+ip route 201.3.0.18 255.255.255.255 201.3.4.130
+ip route 201.3.0.2 255.255.255.255 201.3.4.65
 
 end
 
