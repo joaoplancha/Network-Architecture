@@ -1,0 +1,29 @@
+Dec 05 23:02:06.716 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 05 23:02:06.716 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 59253.
+Dec 05 23:02:06.779 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 05 23:02:06.781 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/part2/project-files/dynamips 
+Dec 05 23:02:06.781 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/part2/project-files/dynamips
+Dec 05 23:02:06.785 HYPERVISOR: exec_cmd: vm create R13 1 c3725 
+Dec 05 23:02:06.786 VM: VM R13 created.
+Dec 05 23:02:06.789 HYPERVISOR: exec_cmd: vm set_con_tcp_port R13 2005 
+Dec 05 23:02:06.792 HYPERVISOR: exec_cmd: c3725 get_mac_addr R13 
+Dec 05 23:02:06.795 HYPERVISOR: exec_cmd: c3725 set_mac_addr R13 c201.1033.0000 
+Dec 05 23:02:06.798 HYPERVISOR: exec_cmd: vm set_ios R13 /home/joao/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 05 23:02:06.812 HYPERVISOR: exec_cmd: vm get_status R13 
+Dec 05 23:02:06.833 HYPERVISOR: exec_cmd: vm set_idle_pc R13 0x60a6a390 
+Dec 05 23:02:06.840 HYPERVISOR: exec_cmd: vm get_status R13 
+Dec 05 23:02:06.847 HYPERVISOR: exec_cmd: vm slot_add_binding R13 1 0 NM-1FE-TX 
+Dec 05 23:02:06.861 HYPERVISOR: exec_cmd: vm set_nvram R13 256 
+Dec 05 23:02:06.897 HYPERVISOR: exec_cmd: vm set_disk0 R13 0 
+Dec 05 23:02:06.923 HYPERVISOR: exec_cmd: vm slot_add_binding R13 0 16 WIC-2T 
+Dec 05 23:02:06.928 HYPERVISOR: exec_cmd: vm set_config R13 configs/i1_startup-config.cfg 
+Dec 05 23:02:08.389 HYPERVISOR: exec_cmd: nio create_udp udp-b5e8e211-828a-4302-a7e7-697a60426fa1 10027 127.0.0.1 10026 
+Dec 05 23:02:08.418 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R13 0 1 udp-b5e8e211-828a-4302-a7e7-697a60426fa1 
+Dec 05 23:02:08.451 HYPERVISOR: exec_cmd: vm get_status R13 
+Dec 05 23:10:07.484 HYPERVISOR: exec_cmd: vm get_status R13 
+Dec 05 23:10:07.502 HYPERVISOR: exec_cmd: vm extract_config R13 
+Dec 05 23:10:07.517 HYPERVISOR: exec_cmd: vm delete R13 
+Dec 05 23:10:07.517 VM: VM R13 destroyed.
+Dec 05 23:10:07.530 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 05 23:10:07.674 HYPERVISOR: Stopped.
+Dec 05 23:10:07.674 GENERAL: reset done.

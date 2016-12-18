@@ -1,0 +1,23 @@
+conf t
+int f0/0
+ip add 201.3.10.2 255.255.255.0
+mpls ip
+no shut
+
+int  f0/1
+ip add 201.3.20.2 255.255.255.0
+mpls ip
+no shut
+
+int vlan 1
+ip add 201.3.30.2 255.255.255.0
+mpls ip
+no shut
+
+router ospf 1
+network 201.3.10.0 0.0.0.255 area 0
+network 201.3.20.0 0.0.0.255 area 0
+network 201.3.30.0 0.0.0.255 area 0
+
+end
+wr

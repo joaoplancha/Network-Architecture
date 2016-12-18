@@ -1,0 +1,29 @@
+Dec 11 15:57:01.372 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 11 15:57:01.373 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51922.
+Dec 11 15:57:01.454 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 11 15:57:01.474 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/ISP-Network/part2/project-files/dynamips 
+Dec 11 15:57:01.475 GENERAL: working_dir=/home/joao/code/ISP-Network/part2/project-files/dynamips
+Dec 11 15:57:01.501 HYPERVISOR: exec_cmd: vm create R10 11 c3725 
+Dec 11 15:57:01.501 VM: VM R10 created.
+Dec 11 15:57:01.506 HYPERVISOR: exec_cmd: vm set_con_tcp_port R10 5027 
+Dec 11 15:57:01.509 HYPERVISOR: exec_cmd: c3725 get_mac_addr R10 
+Dec 11 15:57:01.511 HYPERVISOR: exec_cmd: vm get_status R10 
+Dec 11 15:57:01.514 HYPERVISOR: exec_cmd: vm set_idle_pc R10 0x60a68e70 
+Dec 11 15:57:01.519 HYPERVISOR: exec_cmd: vm set_ios R10 /home/joao/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 11 15:57:01.522 HYPERVISOR: exec_cmd: vm set_disk0 R10 0 
+Dec 11 15:57:01.525 HYPERVISOR: exec_cmd: c3725 set_mac_addr R10 c20b.12d7.0000 
+Dec 11 15:57:01.529 HYPERVISOR: exec_cmd: vm set_nvram R10 256 
+Dec 11 15:57:01.531 HYPERVISOR: exec_cmd: vm set_config R10 configs/i11_startup-config.cfg 
+Dec 11 15:57:02.767 HYPERVISOR: exec_cmd: nio create_udp udp-056c667f-fcea-49ac-9f12-08bd28b9ca45 10019 127.0.0.1 10018 
+Dec 11 15:57:02.787 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R10 0 0 udp-056c667f-fcea-49ac-9f12-08bd28b9ca45 
+Dec 11 15:57:02.806 HYPERVISOR: exec_cmd: vm get_status R10 
+Dec 11 15:57:02.852 HYPERVISOR: exec_cmd: nio create_udp udp-235f70d9-770b-45f0-8cd7-cffff9fc4dd8 10023 127.0.0.1 10022 
+Dec 11 15:57:02.864 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R10 0 1 udp-235f70d9-770b-45f0-8cd7-cffff9fc4dd8 
+Dec 11 15:57:02.881 HYPERVISOR: exec_cmd: vm get_status R10 
+Dec 11 16:18:11.591 HYPERVISOR: exec_cmd: vm get_status R10 
+Dec 11 16:18:11.623 HYPERVISOR: exec_cmd: vm extract_config R10 
+Dec 11 16:18:11.645 HYPERVISOR: exec_cmd: vm delete R10 
+Dec 11 16:18:11.645 VM: VM R10 destroyed.
+Dec 11 16:18:11.657 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 11 16:18:11.705 HYPERVISOR: Stopped.
+Dec 11 16:18:11.705 GENERAL: reset done.

@@ -1,0 +1,34 @@
+Dec 11 15:57:00.995 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 11 15:57:00.995 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56844.
+Dec 11 15:57:01.010 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 11 15:57:01.013 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/ISP-Network/part2/project-files/dynamips 
+Dec 11 15:57:01.013 GENERAL: working_dir=/home/joao/code/ISP-Network/part2/project-files/dynamips
+Dec 11 15:57:01.030 HYPERVISOR: exec_cmd: vm create R3 15 c3725 
+Dec 11 15:57:01.030 VM: VM R3 created.
+Dec 11 15:57:01.036 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+Dec 11 15:57:01.039 HYPERVISOR: exec_cmd: c3725 get_mac_addr R3 
+Dec 11 15:57:01.042 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 11 15:57:01.045 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x60a6a390 
+Dec 11 15:57:01.047 HYPERVISOR: exec_cmd: vm set_ios R3 /home/joao/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 11 15:57:01.049 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Dec 11 15:57:01.051 HYPERVISOR: exec_cmd: c3725 set_mac_addr R3 c20f.74f3.0000 
+Dec 11 15:57:01.076 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Dec 11 15:57:01.133 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 11 15:57:01.146 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 NM-1FE-TX 
+Dec 11 15:57:01.178 HYPERVISOR: exec_cmd: vm set_config R3 configs/i15_startup-config.cfg 
+Dec 11 15:57:02.453 HYPERVISOR: exec_cmd: nio create_udp udp-8c77b82a-c781-494e-9d73-24dd998bd480 10002 127.0.0.1 10003 
+Dec 11 15:57:02.455 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 1 0 udp-8c77b82a-c781-494e-9d73-24dd998bd480 
+Dec 11 15:57:02.457 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 11 15:57:02.731 HYPERVISOR: exec_cmd: nio create_udp udp-c9f0538f-a44d-4c54-8213-e3c7891b1d44 10015 127.0.0.1 10014 
+Dec 11 15:57:02.754 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-c9f0538f-a44d-4c54-8213-e3c7891b1d44 
+Dec 11 15:57:02.767 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 11 15:57:03.249 HYPERVISOR: exec_cmd: nio create_udp udp-a460a785-1ae2-4312-806e-e887f5d81480 10042 127.0.0.1 10043 
+Dec 11 15:57:03.260 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-a460a785-1ae2-4312-806e-e887f5d81480 
+Dec 11 15:57:03.270 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 11 16:18:11.599 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 11 16:18:11.634 HYPERVISOR: exec_cmd: vm extract_config R3 
+Dec 11 16:18:11.648 HYPERVISOR: exec_cmd: vm delete R3 
+Dec 11 16:18:11.648 VM: VM R3 destroyed.
+Dec 11 16:18:11.660 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 11 16:18:11.786 HYPERVISOR: Stopped.
+Dec 11 16:18:11.786 GENERAL: reset done.

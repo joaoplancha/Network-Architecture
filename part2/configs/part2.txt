@@ -1,0 +1,27 @@
+
+Feito:
+
+1. EIGRP
+
+2. EtherChannel na área 3
+
+
+
+Parcialmente feito:
+
+2. Criar uma nova área (area 5) com 1 router e vários servidores (web, FS, etc.)
+2.1. NAT estático para permitir acesso do exterior ao um dos servidores web. Access-List para limitar acesso ao servidor web pela porta 80
+
+
+
+Por fazer: 
+
+3. Criar GRE tunnel (overlay VPN) entre R3 e R5: Ligação do regulador bancário à sede do banco.
+
+4. VPN em MPLS (peer to peer VPN) p.e. para ligar Servidor de Intranet à área 3 (agência do banco)
+
+
+extra:
+5. Tradução IPv4 - IPv6
+
+6. Redundância nas áreas 1 (+1 router) e 3 (+1 SWR).

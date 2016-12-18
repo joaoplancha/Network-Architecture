@@ -1,0 +1,50 @@
+conf t
+
+hostname R4
+
+ip domain lookup   
+ip name-server 201.3.1.2
+
+int f0/0
+ip add 201.3.1.1 255.255.255.252
+ipv6 add 2001:db8:3:44::4/64
+no shut
+
+int f0/1
+ip add 201.3.0.17 255.255.255.240
+ipv6 add 2001:db8:3:456::4/64
+no shut
+
+int s1/0
+ip add 201.3.0.2 255.255.255.240
+ipv6 add 2001:db8:3:14::4/64
+encapsulation ppp
+no shut
+
+router ospf 1
+router-id 4.4.4.4
+network 201.3.0.0 0.0.0.15 area 0
+network 201.3.1.0 0.0.0.3 area 1
+network 201.3.0.16 0.0.0.15 area 0
+
+
+ipv6 unicast-routing
+ipv6 router ospf 1
+router-id 4.4.4.4
+int f0/0
+ipv6 ospf 1 area 1
+int f0/1
+ipv6 ospf 1 area 0
+int s1/0
+ipv6 ospf 1 area 0
+
+router eigrp 100
+network 201.3.0.0 0.0.0.15
+network 201.3.1.0 0.0.0.3
+network 201.3.0.16 0.0.0.15
+no auto-summary
+
+end
+
+wr
+

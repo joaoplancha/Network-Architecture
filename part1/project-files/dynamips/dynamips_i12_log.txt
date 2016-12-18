@@ -1,49 +1,35 @@
-Dec 05 18:06:14.826 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
-Dec 05 18:06:14.826 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 38686.
-Dec 05 18:06:14.872 HYPERVISOR: exec_cmd: hypervisor version 
-Dec 05 18:06:14.876 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/gns3/project-files/dynamips 
-Dec 05 18:06:14.876 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/gns3/project-files/dynamips
-Dec 05 18:06:14.879 HYPERVISOR: exec_cmd: vm create SW11 3 c3725 
-Dec 05 18:06:14.881 VM: VM SW11 created.
-Dec 05 18:06:14.889 HYPERVISOR: exec_cmd: vm set_con_tcp_port SW11 2001 
-Dec 05 18:06:14.895 HYPERVISOR: exec_cmd: c3725 get_mac_addr SW11 
-Dec 05 18:06:14.899 HYPERVISOR: exec_cmd: vm get_status SW11 
-Dec 05 18:06:14.931 HYPERVISOR: exec_cmd: vm slot_add_binding SW11 1 0 NM-16ESW 
-Dec 05 18:06:14.952 HYPERVISOR: exec_cmd: vm set_ios SW11 /home/joao/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
-Dec 05 18:06:14.957 HYPERVISOR: exec_cmd: c3725 set_mac_addr SW11 c203.7a0c.0000 
-Dec 05 18:06:14.958 HYPERVISOR: exec_cmd: vm set_disk0 SW11 1 
-Dec 05 18:06:14.959 HYPERVISOR: exec_cmd: vm set_nvram SW11 256 
-Dec 05 18:06:14.960 HYPERVISOR: exec_cmd: vm get_status SW11 
-Dec 05 18:06:14.960 HYPERVISOR: exec_cmd: vm set_idle_pc SW11 0x60a68e70 
-Dec 05 18:06:14.961 HYPERVISOR: exec_cmd: vm set_config SW11 configs/i3_startup-config.cfg 
-Dec 05 18:06:16.467 HYPERVISOR: exec_cmd: nio create_udp udp-f4e95c88-5fd0-46c8-9214-c080fd040a0f 10042 127.0.0.1 10041 
-Dec 05 18:06:16.516 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW11 1 1 udp-f4e95c88-5fd0-46c8-9214-c080fd040a0f 
-Dec 05 18:06:16.555 HYPERVISOR: exec_cmd: vm get_status SW11 
-Dec 05 18:06:16.585 HYPERVISOR: exec_cmd: nio create_udp udp-34250170-dc4a-4837-8638-9185bced77dc 10038 127.0.0.1 10043 
-Dec 05 18:06:16.613 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW11 1 0 udp-34250170-dc4a-4837-8638-9185bced77dc 
-Dec 05 18:06:16.614 HYPERVISOR: exec_cmd: vm get_status SW11 
-Dec 05 18:06:16.635 HYPERVISOR: exec_cmd: nio create_udp udp-ce111215-9f29-4368-a43b-935d3b5f57f6 10045 127.0.0.1 10044 
-Dec 05 18:06:16.639 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW11 1 2 udp-ce111215-9f29-4368-a43b-935d3b5f57f6 
-Dec 05 18:06:16.640 HYPERVISOR: exec_cmd: vm get_status SW11 
-Dec 05 18:53:30.516 HYPERVISOR: exec_cmd: vm set_ghost_status SW11 2 
-Dec 05 18:53:30.929 HYPERVISOR: exec_cmd: vm set_ghost_file SW11 c3725-advipservicesk9-mz.124-21.image-128.ghost 
-Dec 05 18:53:30.970 HYPERVISOR: exec_cmd: vm get_status SW11 
-Dec 05 18:53:31.043 HYPERVISOR: exec_cmd: vm start SW11 
-Dec 05 19:08:02.701 HYPERVISOR: exec_cmd: vm get_status SW11 
-Dec 05 19:08:02.877 HYPERVISOR: exec_cmd: vm stop SW11 
-Dec 05 19:08:03.528 VM: VM SW11 shutdown.
-Dec 05 19:08:03.578 HYPERVISOR: exec_cmd: vm extract_config SW11 
-Dec 05 19:08:14.000 HYPERVISOR: exec_cmd: vm get_status SW11 
-Dec 05 19:08:14.049 HYPERVISOR: exec_cmd: vm start SW11 
-Dec 05 19:11:09.358 HYPERVISOR: exec_cmd: vm get_status SW11 
-Dec 05 19:11:09.362 HYPERVISOR: exec_cmd: vm stop SW11 
-Dec 05 19:11:09.775 VM: VM SW11 shutdown.
-Dec 05 19:11:09.781 HYPERVISOR: exec_cmd: vm extract_config SW11 
-Dec 05 19:11:14.116 HYPERVISOR: exec_cmd: vm extract_config SW11 
-Dec 05 19:11:50.938 HYPERVISOR: exec_cmd: vm get_status SW11 
-Dec 05 19:11:50.958 HYPERVISOR: exec_cmd: vm extract_config SW11 
-Dec 05 19:11:50.978 HYPERVISOR: exec_cmd: vm delete SW11 
-Dec 05 19:11:50.978 VM: VM SW11 destroyed.
-Dec 05 19:11:50.994 HYPERVISOR: exec_cmd: hypervisor stop 
-Dec 05 19:11:51.480 HYPERVISOR: Stopped.
-Dec 05 19:11:51.480 GENERAL: reset done.
+Dec 05 19:20:05.913 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 05 19:20:05.913 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 33895.
+Dec 05 19:20:05.985 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 05 19:20:05.994 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/part1/project-files/dynamips 
+Dec 05 19:20:05.994 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/part1/project-files/dynamips
+Dec 05 19:20:05.996 HYPERVISOR: exec_cmd: vm create SW11 3 c3725 
+Dec 05 19:20:05.996 VM: VM SW11 created.
+Dec 05 19:20:06.003 HYPERVISOR: exec_cmd: vm set_con_tcp_port SW11 2001 
+Dec 05 19:20:06.006 HYPERVISOR: exec_cmd: c3725 get_mac_addr SW11 
+Dec 05 19:20:06.007 HYPERVISOR: exec_cmd: vm set_disk0 SW11 1 
+Dec 05 19:20:06.008 HYPERVISOR: exec_cmd: vm set_nvram SW11 256 
+Dec 05 19:20:06.010 HYPERVISOR: exec_cmd: vm set_ios SW11 /home/joao/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 05 19:20:06.010 HYPERVISOR: exec_cmd: vm get_status SW11 
+Dec 05 19:20:06.011 HYPERVISOR: exec_cmd: vm slot_add_binding SW11 1 0 NM-16ESW 
+Dec 05 19:20:06.012 HYPERVISOR: exec_cmd: vm get_status SW11 
+Dec 05 19:20:06.013 HYPERVISOR: exec_cmd: vm set_idle_pc SW11 0x60a68e70 
+Dec 05 19:20:06.014 HYPERVISOR: exec_cmd: c3725 set_mac_addr SW11 c203.7a0c.0000 
+Dec 05 19:20:06.015 HYPERVISOR: exec_cmd: vm set_config SW11 configs/i3_startup-config.cfg 
+Dec 05 19:20:07.565 HYPERVISOR: exec_cmd: nio create_udp udp-716a26d8-aa1e-4c3f-9d78-f63c43237d24 10039 127.0.0.1 10038 
+Dec 05 19:20:07.585 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW11 1 1 udp-716a26d8-aa1e-4c3f-9d78-f63c43237d24 
+Dec 05 19:20:07.606 HYPERVISOR: exec_cmd: vm get_status SW11 
+Dec 05 19:20:07.658 HYPERVISOR: exec_cmd: nio create_udp udp-3402a89b-7342-4219-90da-5ed59823cb36 10040 127.0.0.1 10041 
+Dec 05 19:20:07.693 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW11 1 0 udp-3402a89b-7342-4219-90da-5ed59823cb36 
+Dec 05 19:20:07.698 HYPERVISOR: exec_cmd: vm get_status SW11 
+Dec 05 19:20:07.747 HYPERVISOR: exec_cmd: nio create_udp udp-65d8f77b-966b-4542-a403-69b22f25a0d2 10043 127.0.0.1 10042 
+Dec 05 19:20:07.751 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW11 1 2 udp-65d8f77b-966b-4542-a403-69b22f25a0d2 
+Dec 05 19:20:07.752 HYPERVISOR: exec_cmd: vm get_status SW11 
+Dec 05 19:20:36.065 HYPERVISOR: exec_cmd: vm extract_config SW11 
+Dec 05 19:20:36.495 HYPERVISOR: exec_cmd: vm get_status SW11 
+Dec 05 19:20:36.535 HYPERVISOR: exec_cmd: vm extract_config SW11 
+Dec 05 19:20:36.548 HYPERVISOR: exec_cmd: vm delete SW11 
+Dec 05 19:20:36.548 VM: VM SW11 destroyed.
+Dec 05 19:20:36.572 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 05 19:20:37.000 HYPERVISOR: Stopped.
+Dec 05 19:20:37.000 GENERAL: reset done.

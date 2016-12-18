@@ -1,0 +1,25 @@
+int range fa1/2 - 4
+switchport mode access
+switchport access vlan 2
+int range fa1/0 - 1
+switchport trunk encapsulation dot
+switchport mode trunk
+
+
+int range fa1/5 - 9
+switchport mode access
+switchport access vlan 3
+int range fa1/0 - 1
+switchport trunk encapsulation dot
+switchport mode trunk
+
+
+int range fa1/10 - 14
+switchport mode access
+switchport access vlan 4
+int range fa1/0 - 1
+switchport trunk encapsulation dot
+switchport mode trunk
+
+
+

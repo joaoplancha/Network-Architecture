@@ -1,0 +1,20 @@
+conf t
+
+int f0/0
+ip add 192.168.102.10 255.255.255.0
+no shut
+
+int f0/1
+ip add 192.168.103.10 255.255.255.0
+no shut
+
+exit
+
+router bgp 101
+network 192.168.103.0
+network 192.168.102.0
+neighbor 192.168.102.4 remote-as 101
+neighbor 192.168.102.4 next-hop-self
+
+end
+wr

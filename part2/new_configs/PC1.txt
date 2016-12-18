@@ -1,0 +1,15 @@
+conf t
+
+no ip routing
+
+int f0/0
+ip add 192.168.100.100 255.255.255.0
+no shut
+
+int f0/1
+ip add 192.168.103.100 255.255.255.0
+no shut
+
+end
+wr
+

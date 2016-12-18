@@ -1,0 +1,2 @@
+set pcname PC3 - vlan 3
+dhcp

@@ -1,0 +1,40 @@
+Dec 10 15:27:21.703 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Dec 10 15:27:21.703 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49622.
+Dec 10 15:27:21.785 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 10 15:27:21.797 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/afonsocaetano/GNS3/projects/ISP-Network/part2/project-files/dynamips 
+Dec 10 15:27:21.797 GENERAL: working_dir=/Users/afonsocaetano/GNS3/projects/ISP-Network/part2/project-files/dynamips
+Dec 10 15:27:21.805 HYPERVISOR: exec_cmd: vm create R5 20 c3725 
+Dec 10 15:27:21.805 VM: VM R5 created.
+Dec 10 15:27:21.815 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 5004 
+Dec 10 15:27:21.821 HYPERVISOR: exec_cmd: c3725 get_mac_addr R5 
+Dec 10 15:27:21.835 HYPERVISOR: exec_cmd: c3725 set_mac_addr R5 c214.7511.0000 
+Dec 10 15:27:21.846 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 10 15:27:21.876 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x60a6a390 
+Dec 10 15:27:21.915 HYPERVISOR: exec_cmd: vm set_disk0 R5 0 
+Dec 10 15:27:21.925 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 5004 
+Dec 10 15:27:21.927 HYPERVISOR: exec_cmd: vm set_nvram R5 256 
+Dec 10 15:27:21.930 HYPERVISOR: exec_cmd: vm set_ios R5 /Users/afonsocaetano/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 10 15:27:21.936 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 10 15:27:21.942 HYPERVISOR: exec_cmd: vm slot_add_binding R5 1 0 NM-1FE-TX 
+Dec 10 15:27:21.947 HYPERVISOR: exec_cmd: vm set_config R5 configs/i20_startup-config.cfg 
+Dec 10 15:27:22.919 HYPERVISOR: exec_cmd: nio create_udp udp-0b62f4fe-e264-483f-912f-9cfbb9073ad4 10015 127.0.0.1 10014 
+Dec 10 15:27:22.935 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 0 udp-0b62f4fe-e264-483f-912f-9cfbb9073ad4 
+Dec 10 15:27:22.953 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 10 15:27:23.485 HYPERVISOR: exec_cmd: nio create_udp udp-b8f17fa5-6c58-4d0b-9bd9-204e5a080bb3 10055 127.0.0.1 10054 
+Dec 10 15:27:23.499 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 1 0 udp-b8f17fa5-6c58-4d0b-9bd9-204e5a080bb3 
+Dec 10 15:27:23.511 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 10 15:28:22.857 HYPERVISOR: exec_cmd: vm set_ghost_status R5 2 
+Dec 10 15:28:22.874 HYPERVISOR: exec_cmd: vm set_ghost_file R5 c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Dec 10 15:28:22.881 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 10 15:28:22.901 HYPERVISOR: exec_cmd: vm start R5 
+Dec 10 17:30:06.632 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 10 17:30:06.633 HYPERVISOR: exec_cmd: vm stop R5 
+Dec 10 17:30:06.745 VM: VM R5 shutdown.
+Dec 10 17:30:06.746 HYPERVISOR: exec_cmd: vm extract_config R5 
+Dec 10 17:32:07.432 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 10 17:32:07.444 HYPERVISOR: exec_cmd: vm extract_config R5 
+Dec 10 17:32:07.473 HYPERVISOR: exec_cmd: vm delete R5 
+Dec 10 17:32:07.473 VM: VM R5 destroyed.
+Dec 10 17:32:07.486 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 10 17:32:07.732 HYPERVISOR: Stopped.
+Dec 10 17:32:07.733 GENERAL: reset done.
